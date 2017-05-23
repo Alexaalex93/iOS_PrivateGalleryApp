@@ -1,0 +1,12 @@
+PODS:
+  - NohanaImagePicker (0.7.1)
+
+DEPENDENCIES:
+  - NohanaImagePicker
+
+SPEC CHECKSUMS:
+  NohanaImagePicker: ae909c23150c30e29ab2c5d48766c39eef21d790
+
+PODFILE CHECKSUM: 051063638b4d1ab41bd6f100922b329b8ff701be
+
+COCOAPODS: 1.2.0

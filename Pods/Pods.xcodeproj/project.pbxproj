@@ -1,0 +1,1089 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B5CBEE029693006732227C661EF97F8 /* Pods-PrivateGalleryTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E57655CEC8CA4AA12DC7654DE979B5D2 /* Pods-PrivateGalleryTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		15F9513373DB6AD14F0D0D85E378C6D5 /* PhotoKitAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930E2D70387532230AF0B13BEAD270BA /* PhotoKitAsset.swift */; };
+		2114D0F6C2F9422AB642B1077F5BFFD3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B7DC0D4DDBF0DEDB6ABF47D3B8A83BE /* Images.xcassets */; };
+		2191BB5A4520240A027AA68FCBCC7F09 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1071312084E8D184CDB35386F24C7F21 /* UIKit.framework */; };
+		23FF2693D93227E1637DCF75D7ECEE84 /* ContractingAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90828F69956CB1A56A426FC969202AA5 /* ContractingAnimationController.swift */; };
+		32A61E9EC20E043DDCAFBBCF4C58617C /* AnimatableNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43BEF3CD1FAD5E3292B7D02E5DF28F5 /* AnimatableNavigationController.swift */; };
+		337C355DB1FE54DBBA930904F1047B2A /* NohanaImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B42DDDB81476C60228BBAFEDB5E5228 /* NohanaImagePickerController.swift */; };
+		39D6632C6862B66705856B5083B696FA /* ColorConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B056D23F993338A51AA81D9DA058DB /* ColorConfig.swift */; };
+		41B5E7DB49589E0A8187FCC476171D1E /* ItemListType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CF989D9F38AB46A195296FC1E208BE /* ItemListType.swift */; };
+		492166B3B20AF78218FEC802A6911520 /* PhotoKitAssetList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9846791A18F3AFE006504D2089DEBCC1 /* PhotoKitAssetList.swift */; };
+		4B2462A94408679A5746E7325BACABB9 /* Pods-PrivateGalleryUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A55C57C891E4A37E84FD65675B5A3590 /* Pods-PrivateGalleryUITests-dummy.m */; };
+		4D782DCCE6DB2831A315C3FC97DC15A6 /* MomentSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6802AEBA673EC708BA803A3F68F284 /* MomentSectionHeaderView.swift */; };
+		59C80FF241E83EC7F6C85AF471FE70D4 /* NohanaImagePicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A6ED1D32B607F7BA5386CB02D1CBF562 /* NohanaImagePicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B127A9BF47A041796DFA80FD6364847 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A314C8C8E56E490E4C7BC249858228E0 /* Foundation.framework */; };
+		5F027C2BDA58966BBBDEFF8F6D080327 /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBE4CD4738E1BB5D35CE0E8D2DE08DA /* AlbumCell.swift */; };
+		60DFE12F50E0EEA8E3F7393C4EB02526 /* AlbumListEmptyIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5CCB52B45F21A9A7D1B80A98BFBD59 /* AlbumListEmptyIndicator.swift */; };
+		66E161FDAB08796D5CF03CE3F65565C3 /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8A2A980E75C894A60D511DC8AF2351 /* Size.swift */; };
+		7CDC114FD6F7E3F052115CE5722BBD16 /* ActivityIndicatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A1261F40E63347BBACB9B5158358D6 /* ActivityIndicatable.swift */; };
+		84B0A931B54406E4B2DE04964A743C8E /* PickedAssetList.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0F9AFA95862BE418FBD827B8B48104 /* PickedAssetList.swift */; };
+		860F7D81760D481041B26F47734BCE23 /* NotificationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81ECDC3F33CC55E178B086C6186C1ED3 /* NotificationInfo.swift */; };
+		8700D26DC967AEE97995483B9188B20E /* MomentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D278EC40773D1B30A3E588DE6B782BF /* MomentCell.swift */; };
+		8ABCA91BF7AB5E77201240FBEBE83187 /* EmptyIndicatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554761E79538B40D52AB39540898481D /* EmptyIndicatable.swift */; };
+		8F1599D36DB6D08F0C0425382ED8ED37 /* PhotoKitAlbumList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABD19EFFB383C85D4B4BDF0ED298124 /* PhotoKitAlbumList.swift */; };
+		99A8C81EA40954C985C6DB707FDBB032 /* NohanaImagePicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4BBF371A79200F2C7C31FB23DAF0C8 /* NohanaImagePicker-dummy.m */; };
+		A16E0E0E0B081569A06669A6E215D0E4 /* Pods-PrivateGallery-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 544F9A664D126718608DC3D382C97B45 /* Pods-PrivateGallery-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A977A7C36DF16DCF94EC6AACA38E595B /* AssetListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8545F670EB2554A1E8AF28EDBBBE8D1 /* AssetListViewController.swift */; };
+		AB9EC2E79C50A94637139324381909A3 /* MomentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761D4376A198DC761774B2723AC238D6 /* MomentViewController.swift */; };
+		AF23B1055FDDB29BF5DF564D2CB30A25 /* NohanaImagePicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D735EA52AFF0B2DC60282F0DC55B3438 /* NohanaImagePicker.storyboard */; };
+		B2D792D60207C4A0E59D84E20DEFD1AD /* SwipeInteractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64F5441A58769544A124131CD8E0E3 /* SwipeInteractionController.swift */; };
+		B8046725175F04E6C9193DAE82BC647E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A314C8C8E56E490E4C7BC249858228E0 /* Foundation.framework */; };
+		BE029883CE2081BEACF0E70B78D4668D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A314C8C8E56E490E4C7BC249858228E0 /* Foundation.framework */; };
+		C0BABC068BDA7FE33E1034AD1ACFA180 /* ExpandingAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606B559BBAB76115E930CCDDA10A272C /* ExpandingAnimationController.swift */; };
+		C250AAC4514E2A85FF4544BC87F5F5AB /* ImageName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380FDB2A7ECD0994F635757F4CCC7586 /* ImageName.swift */; };
+		C39C55C609CA87F43248A534418A37F5 /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 39524BC861D54A6DCAC18C0BA3D70131 /* en.lproj */; };
+		C3E23F2016F3D2ED7245B42EB44D151A /* NohanaImagePicker.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B0F2CE2D9D2182BC75B3E94AD63C5FD9 /* NohanaImagePicker.bundle */; };
+		C76649AA48340C2EA677526F81407B11 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A314C8C8E56E490E4C7BC249858228E0 /* Foundation.framework */; };
+		D6D5A4C69AF3BFA03499ED1166492724 /* Pods-PrivateGallery-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 80BD06F914189B550FFAA25A46FCEDBD /* Pods-PrivateGallery-dummy.m */; };
+		D72FE7D9D2FA50D16CEA4D998F3F1CFD /* AlbumListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0323076D327DE21AD3913EF7CFDE112 /* AlbumListViewController.swift */; };
+		D7A0CAC30F5D8E1788F0AF46F24EA246 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4270C238331061F08C237A5B6AA502A /* Photos.framework */; };
+		DA413D5770141E1ECA2821842106E197 /* AssetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82461EA62DE48532020319DC92C3DB8 /* AssetCell.swift */; };
+		DC67937DDEE44FF723777D3E7CD2867A /* Pods-PrivateGalleryTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B17B245556F449A37A95E2A5FFC4E53D /* Pods-PrivateGalleryTests-dummy.m */; };
+		DCB8F613FE8723E49CB367D3C3A2D8EE /* Pods-PrivateGalleryUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F0EA77CBDE9504AC5B1947C09C52CA72 /* Pods-PrivateGalleryUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD744870624889D130BCE6109539E4CA /* ja.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 6D3DF12C0E8FADC8047BF33D1E385E81 /* ja.lproj */; };
+		E9DD27C226929C3AC285F5F660049829 /* AssetDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54028BB85C499AE26E7BE41FCC9B6319 /* AssetDetailCell.swift */; };
+		FAA34912AF96178A05E135352162BA46 /* AssetDetailListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C699F8E88877A4AB026FA498522CDCBA /* AssetDetailListViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3D58177D4040259F9EF32580367CCF5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 557EF6D0EC0A2C51D37F961DBB1824C0;
+			remoteInfo = NohanaImagePicker;
+		};
+		8899865B63D5EFD6518961AB20BBE059 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1CA3A09DC5C73A7CF7E166CA61C30139;
+			remoteInfo = "NohanaImagePicker-NohanaImagePicker";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0D6802AEBA673EC708BA803A3F68F284 /* MomentSectionHeaderView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MomentSectionHeaderView.swift; path = NohanaImagePicker/MomentSectionHeaderView.swift; sourceTree = "<group>"; };
+		0FD1D465C1C92C608F77E43F4F9B6133 /* Pods-PrivateGallery-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PrivateGallery-acknowledgements.plist"; sourceTree = "<group>"; };
+		1071312084E8D184CDB35386F24C7F21 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		14A1261F40E63347BBACB9B5158358D6 /* ActivityIndicatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActivityIndicatable.swift; path = NohanaImagePicker/ActivityIndicatable.swift; sourceTree = "<group>"; };
+		1CD3F62C1E117E7F05C97951CEB02693 /* Pods-PrivateGallery.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-PrivateGallery.modulemap"; sourceTree = "<group>"; };
+		2957BE7711472E052375916D341A9917 /* Pods-PrivateGallery-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PrivateGallery-resources.sh"; sourceTree = "<group>"; };
+		380FDB2A7ECD0994F635757F4CCC7586 /* ImageName.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageName.swift; path = NohanaImagePicker/ImageName.swift; sourceTree = "<group>"; };
+		39524BC861D54A6DCAC18C0BA3D70131 /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = en.lproj; path = NohanaImagePicker/en.lproj; sourceTree = "<group>"; };
+		3B42DDDB81476C60228BBAFEDB5E5228 /* NohanaImagePickerController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NohanaImagePickerController.swift; path = NohanaImagePicker/NohanaImagePickerController.swift; sourceTree = "<group>"; };
+		40E948A67739D615714CC4EB00BFC69C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		414A200ABBC93728475D6E0E4E469D50 /* Pods-PrivateGalleryTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PrivateGalleryTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		46B8D3547A070F50DE930DF723308639 /* Pods-PrivateGalleryUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PrivateGalleryUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4B7DC0D4DDBF0DEDB6ABF47D3B8A83BE /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = NohanaImagePicker/Images.xcassets; sourceTree = "<group>"; };
+		54028BB85C499AE26E7BE41FCC9B6319 /* AssetDetailCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssetDetailCell.swift; path = NohanaImagePicker/AssetDetailCell.swift; sourceTree = "<group>"; };
+		544F9A664D126718608DC3D382C97B45 /* Pods-PrivateGallery-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PrivateGallery-umbrella.h"; sourceTree = "<group>"; };
+		554761E79538B40D52AB39540898481D /* EmptyIndicatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EmptyIndicatable.swift; path = NohanaImagePicker/EmptyIndicatable.swift; sourceTree = "<group>"; };
+		57D4BF83F31D0983E7EB224C3357FD52 /* Pods_PrivateGallery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PrivateGallery.framework; path = "Pods-PrivateGallery.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D74FE12D953E6E51884DA1371055467 /* Pods-PrivateGallery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PrivateGallery.release.xcconfig"; sourceTree = "<group>"; };
+		606B559BBAB76115E930CCDDA10A272C /* ExpandingAnimationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpandingAnimationController.swift; path = NohanaImagePicker/ExpandingAnimationController.swift; sourceTree = "<group>"; };
+		6110CCEC4BD88F290DC39989C5DA46AE /* Pods-PrivateGalleryTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PrivateGalleryTests-resources.sh"; sourceTree = "<group>"; };
+		614BA23CF255DC21A4F4CD5C48AB2500 /* Pods-PrivateGalleryUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PrivateGalleryUITests-frameworks.sh"; sourceTree = "<group>"; };
+		6513D143E47D0188ACAF01AAA1A32CFE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D3DF12C0E8FADC8047BF33D1E385E81 /* ja.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ja.lproj; path = NohanaImagePicker/ja.lproj; sourceTree = "<group>"; };
+		6D5CCB52B45F21A9A7D1B80A98BFBD59 /* AlbumListEmptyIndicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlbumListEmptyIndicator.swift; path = NohanaImagePicker/AlbumListEmptyIndicator.swift; sourceTree = "<group>"; };
+		761D4376A198DC761774B2723AC238D6 /* MomentViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MomentViewController.swift; path = NohanaImagePicker/MomentViewController.swift; sourceTree = "<group>"; };
+		76385F8C235268A7305BDDC1B7C1BA6F /* Pods-PrivateGalleryUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PrivateGalleryUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7C25C550D92B8F36F75CE4033DBDB1CC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80BD06F914189B550FFAA25A46FCEDBD /* Pods-PrivateGallery-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PrivateGallery-dummy.m"; sourceTree = "<group>"; };
+		81758DC01729A273BC97E4D1B23C7A14 /* Pods-PrivateGalleryTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PrivateGalleryTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		81ECDC3F33CC55E178B086C6186C1ED3 /* NotificationInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NotificationInfo.swift; path = NohanaImagePicker/NotificationInfo.swift; sourceTree = "<group>"; };
+		85D1137CE3382720DD297AECAE76D912 /* Pods_PrivateGalleryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PrivateGalleryTests.framework; path = "Pods-PrivateGalleryTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D64E7F6E11D225F5ED7E1DB3A041E62 /* Pods-PrivateGalleryUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-PrivateGalleryUITests.modulemap"; sourceTree = "<group>"; };
+		8FBE4CD4738E1BB5D35CE0E8D2DE08DA /* AlbumCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlbumCell.swift; path = NohanaImagePicker/AlbumCell.swift; sourceTree = "<group>"; };
+		9071E7AD44DCDB7FD8437451218383CD /* Pods-PrivateGalleryUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PrivateGalleryUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		90828F69956CB1A56A426FC969202AA5 /* ContractingAnimationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContractingAnimationController.swift; path = NohanaImagePicker/ContractingAnimationController.swift; sourceTree = "<group>"; };
+		924639F6E13C7EE05A427BC77CC7A80D /* Pods-PrivateGalleryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PrivateGalleryTests.debug.xcconfig"; sourceTree = "<group>"; };
+		930E2D70387532230AF0B13BEAD270BA /* PhotoKitAsset.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhotoKitAsset.swift; path = NohanaImagePicker/PhotoKitAsset.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9846791A18F3AFE006504D2089DEBCC1 /* PhotoKitAssetList.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhotoKitAssetList.swift; path = NohanaImagePicker/PhotoKitAssetList.swift; sourceTree = "<group>"; };
+		9D278EC40773D1B30A3E588DE6B782BF /* MomentCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MomentCell.swift; path = NohanaImagePicker/MomentCell.swift; sourceTree = "<group>"; };
+		A314C8C8E56E490E4C7BC249858228E0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		A4270C238331061F08C237A5B6AA502A /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Photos.framework; sourceTree = DEVELOPER_DIR; };
+		A4B208C324BB06DD0464E9451D78D6AC /* Pods-PrivateGalleryUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PrivateGalleryUITests-resources.sh"; sourceTree = "<group>"; };
+		A55C57C891E4A37E84FD65675B5A3590 /* Pods-PrivateGalleryUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PrivateGalleryUITests-dummy.m"; sourceTree = "<group>"; };
+		A6ED1D32B607F7BA5386CB02D1CBF562 /* NohanaImagePicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NohanaImagePicker-umbrella.h"; sourceTree = "<group>"; };
+		A9CF989D9F38AB46A195296FC1E208BE /* ItemListType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ItemListType.swift; path = NohanaImagePicker/ItemListType.swift; sourceTree = "<group>"; };
+		AA8A2A980E75C894A60D511DC8AF2351 /* Size.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Size.swift; path = NohanaImagePicker/Size.swift; sourceTree = "<group>"; };
+		AAE8586AAB505F40983ECD88C3188472 /* Pods-PrivateGallery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PrivateGallery.debug.xcconfig"; sourceTree = "<group>"; };
+		AF64F5441A58769544A124131CD8E0E3 /* SwipeInteractionController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeInteractionController.swift; path = NohanaImagePicker/SwipeInteractionController.swift; sourceTree = "<group>"; };
+		B0F2CE2D9D2182BC75B3E94AD63C5FD9 /* NohanaImagePicker.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = NohanaImagePicker.bundle; path = NohanaImagePicker.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1751147715AFE00E837C3751710A998 /* Pods-PrivateGallery-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PrivateGallery-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B17B245556F449A37A95E2A5FFC4E53D /* Pods-PrivateGalleryTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PrivateGalleryTests-dummy.m"; sourceTree = "<group>"; };
+		B543366DBAFFA61748310C39F17837E2 /* NohanaImagePicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NohanaImagePicker.framework; path = NohanaImagePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6EAA51E9BBDA75C2335E9D11CD83C6A /* NohanaImagePicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = NohanaImagePicker.modulemap; sourceTree = "<group>"; };
+		C699F8E88877A4AB026FA498522CDCBA /* AssetDetailListViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssetDetailListViewController.swift; path = NohanaImagePicker/AssetDetailListViewController.swift; sourceTree = "<group>"; };
+		C88F9F1C41FE9FA625B806859CFDAC28 /* Pods-PrivateGallery-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PrivateGallery-frameworks.sh"; sourceTree = "<group>"; };
+		CC9301B93D24707DD29042F6CEC0843C /* NohanaImagePicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NohanaImagePicker.xcconfig; sourceTree = "<group>"; };
+		CCB4757605186651E0DE1E6674870F07 /* Pods-PrivateGalleryTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PrivateGalleryTests-frameworks.sh"; sourceTree = "<group>"; };
+		D43BEF3CD1FAD5E3292B7D02E5DF28F5 /* AnimatableNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatableNavigationController.swift; path = NohanaImagePicker/AnimatableNavigationController.swift; sourceTree = "<group>"; };
+		D59F7993699511BC9D34C2BB6745279B /* ResourceBundle-NohanaImagePicker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-NohanaImagePicker-Info.plist"; sourceTree = "<group>"; };
+		D735EA52AFF0B2DC60282F0DC55B3438 /* NohanaImagePicker.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; name = NohanaImagePicker.storyboard; path = NohanaImagePicker/NohanaImagePicker.storyboard; sourceTree = "<group>"; };
+		D8545F670EB2554A1E8AF28EDBBBE8D1 /* AssetListViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssetListViewController.swift; path = NohanaImagePicker/AssetListViewController.swift; sourceTree = "<group>"; };
+		D8ED22A84F736EE0982FCAA7F020A8B6 /* Pods-PrivateGalleryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PrivateGalleryTests.release.xcconfig"; sourceTree = "<group>"; };
+		DA4BBF371A79200F2C7C31FB23DAF0C8 /* NohanaImagePicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NohanaImagePicker-dummy.m"; sourceTree = "<group>"; };
+		DE9830BF1AC6CA46126B846B8F4EAEC4 /* Pods-PrivateGalleryUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PrivateGalleryUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E0B056D23F993338A51AA81D9DA058DB /* ColorConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorConfig.swift; path = NohanaImagePicker/ColorConfig.swift; sourceTree = "<group>"; };
+		E38A876F086590B13B4A2C6C8CC94B8D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E57655CEC8CA4AA12DC7654DE979B5D2 /* Pods-PrivateGalleryTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PrivateGalleryTests-umbrella.h"; sourceTree = "<group>"; };
+		E6A7C265E0E0C5377403EC89D8A4461A /* NohanaImagePicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NohanaImagePicker-prefix.pch"; sourceTree = "<group>"; };
+		EABD19EFFB383C85D4B4BDF0ED298124 /* PhotoKitAlbumList.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhotoKitAlbumList.swift; path = NohanaImagePicker/PhotoKitAlbumList.swift; sourceTree = "<group>"; };
+		ED0F9AFA95862BE418FBD827B8B48104 /* PickedAssetList.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PickedAssetList.swift; path = NohanaImagePicker/PickedAssetList.swift; sourceTree = "<group>"; };
+		F0323076D327DE21AD3913EF7CFDE112 /* AlbumListViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlbumListViewController.swift; path = NohanaImagePicker/AlbumListViewController.swift; sourceTree = "<group>"; };
+		F0EA77CBDE9504AC5B1947C09C52CA72 /* Pods-PrivateGalleryUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PrivateGalleryUITests-umbrella.h"; sourceTree = "<group>"; };
+		F16157EE5D0F64EA65D8376486468151 /* Pods-PrivateGalleryTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-PrivateGalleryTests.modulemap"; sourceTree = "<group>"; };
+		F82461EA62DE48532020319DC92C3DB8 /* AssetCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssetCell.swift; path = NohanaImagePicker/AssetCell.swift; sourceTree = "<group>"; };
+		F9C099A0D5E64E30CE016681A60D3D74 /* Pods_PrivateGalleryUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PrivateGalleryUITests.framework; path = "Pods-PrivateGalleryUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6044C165655A15223250308AE44210E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C76649AA48340C2EA677526F81407B11 /* Foundation.framework in Frameworks */,
+				D7A0CAC30F5D8E1788F0AF46F24EA246 /* Photos.framework in Frameworks */,
+				2191BB5A4520240A027AA68FCBCC7F09 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76E67F7FDEBC5571B145687197014E28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B127A9BF47A041796DFA80FD6364847 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9322FA8EBEC625DDFF3DC8F6427403D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF13A25DD8479F3882C3202BB073E1F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE029883CE2081BEACF0E70B78D4668D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAAB51581798C350CAAE1966C2BBF260 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8046725175F04E6C9193DAE82BC647E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0771AEF8E268F1E169104A4DE88D7FCD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7C25C550D92B8F36F75CE4033DBDB1CC /* Info.plist */,
+				B6EAA51E9BBDA75C2335E9D11CD83C6A /* NohanaImagePicker.modulemap */,
+				CC9301B93D24707DD29042F6CEC0843C /* NohanaImagePicker.xcconfig */,
+				DA4BBF371A79200F2C7C31FB23DAF0C8 /* NohanaImagePicker-dummy.m */,
+				E6A7C265E0E0C5377403EC89D8A4461A /* NohanaImagePicker-prefix.pch */,
+				A6ED1D32B607F7BA5386CB02D1CBF562 /* NohanaImagePicker-umbrella.h */,
+				D59F7993699511BC9D34C2BB6745279B /* ResourceBundle-NohanaImagePicker-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/NohanaImagePicker";
+			sourceTree = "<group>";
+		};
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8C74A00B041FA7E87EC08B0814AF6CFE /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1507E115706DCD01A4CA81FA912CCD27 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2DFF8FB95E5ABCC1D0289BF43D9EB0D7 /* NohanaImagePicker */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		192C2E4C8B26B587809267C9AFAA73AC /* Pods-PrivateGallery */ = {
+			isa = PBXGroup;
+			children = (
+				6513D143E47D0188ACAF01AAA1A32CFE /* Info.plist */,
+				1CD3F62C1E117E7F05C97951CEB02693 /* Pods-PrivateGallery.modulemap */,
+				B1751147715AFE00E837C3751710A998 /* Pods-PrivateGallery-acknowledgements.markdown */,
+				0FD1D465C1C92C608F77E43F4F9B6133 /* Pods-PrivateGallery-acknowledgements.plist */,
+				80BD06F914189B550FFAA25A46FCEDBD /* Pods-PrivateGallery-dummy.m */,
+				C88F9F1C41FE9FA625B806859CFDAC28 /* Pods-PrivateGallery-frameworks.sh */,
+				2957BE7711472E052375916D341A9917 /* Pods-PrivateGallery-resources.sh */,
+				544F9A664D126718608DC3D382C97B45 /* Pods-PrivateGallery-umbrella.h */,
+				AAE8586AAB505F40983ECD88C3188472 /* Pods-PrivateGallery.debug.xcconfig */,
+				5D74FE12D953E6E51884DA1371055467 /* Pods-PrivateGallery.release.xcconfig */,
+			);
+			name = "Pods-PrivateGallery";
+			path = "Target Support Files/Pods-PrivateGallery";
+			sourceTree = "<group>";
+		};
+		248607021EBAF48ACB6304B59EF3233D /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				192C2E4C8B26B587809267C9AFAA73AC /* Pods-PrivateGallery */,
+				6AA5FE6EF8AB84EADACC38AF50563E54 /* Pods-PrivateGalleryTests */,
+				DE9483AE141D9651C58EFAFAD1C1EF69 /* Pods-PrivateGalleryUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		2DFF8FB95E5ABCC1D0289BF43D9EB0D7 /* NohanaImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				14A1261F40E63347BBACB9B5158358D6 /* ActivityIndicatable.swift */,
+				8FBE4CD4738E1BB5D35CE0E8D2DE08DA /* AlbumCell.swift */,
+				6D5CCB52B45F21A9A7D1B80A98BFBD59 /* AlbumListEmptyIndicator.swift */,
+				F0323076D327DE21AD3913EF7CFDE112 /* AlbumListViewController.swift */,
+				D43BEF3CD1FAD5E3292B7D02E5DF28F5 /* AnimatableNavigationController.swift */,
+				F82461EA62DE48532020319DC92C3DB8 /* AssetCell.swift */,
+				54028BB85C499AE26E7BE41FCC9B6319 /* AssetDetailCell.swift */,
+				C699F8E88877A4AB026FA498522CDCBA /* AssetDetailListViewController.swift */,
+				D8545F670EB2554A1E8AF28EDBBBE8D1 /* AssetListViewController.swift */,
+				E0B056D23F993338A51AA81D9DA058DB /* ColorConfig.swift */,
+				90828F69956CB1A56A426FC969202AA5 /* ContractingAnimationController.swift */,
+				554761E79538B40D52AB39540898481D /* EmptyIndicatable.swift */,
+				606B559BBAB76115E930CCDDA10A272C /* ExpandingAnimationController.swift */,
+				380FDB2A7ECD0994F635757F4CCC7586 /* ImageName.swift */,
+				A9CF989D9F38AB46A195296FC1E208BE /* ItemListType.swift */,
+				9D278EC40773D1B30A3E588DE6B782BF /* MomentCell.swift */,
+				0D6802AEBA673EC708BA803A3F68F284 /* MomentSectionHeaderView.swift */,
+				761D4376A198DC761774B2723AC238D6 /* MomentViewController.swift */,
+				3B42DDDB81476C60228BBAFEDB5E5228 /* NohanaImagePickerController.swift */,
+				81ECDC3F33CC55E178B086C6186C1ED3 /* NotificationInfo.swift */,
+				EABD19EFFB383C85D4B4BDF0ED298124 /* PhotoKitAlbumList.swift */,
+				930E2D70387532230AF0B13BEAD270BA /* PhotoKitAsset.swift */,
+				9846791A18F3AFE006504D2089DEBCC1 /* PhotoKitAssetList.swift */,
+				ED0F9AFA95862BE418FBD827B8B48104 /* PickedAssetList.swift */,
+				AA8A2A980E75C894A60D511DC8AF2351 /* Size.swift */,
+				AF64F5441A58769544A124131CD8E0E3 /* SwipeInteractionController.swift */,
+				D436B83AC8A96ADF7EAD2C0A0F40F82B /* Resources */,
+				0771AEF8E268F1E169104A4DE88D7FCD /* Support Files */,
+			);
+			name = NohanaImagePicker;
+			path = NohanaImagePicker;
+			sourceTree = "<group>";
+		};
+		6AA5FE6EF8AB84EADACC38AF50563E54 /* Pods-PrivateGalleryTests */ = {
+			isa = PBXGroup;
+			children = (
+				40E948A67739D615714CC4EB00BFC69C /* Info.plist */,
+				F16157EE5D0F64EA65D8376486468151 /* Pods-PrivateGalleryTests.modulemap */,
+				414A200ABBC93728475D6E0E4E469D50 /* Pods-PrivateGalleryTests-acknowledgements.markdown */,
+				81758DC01729A273BC97E4D1B23C7A14 /* Pods-PrivateGalleryTests-acknowledgements.plist */,
+				B17B245556F449A37A95E2A5FFC4E53D /* Pods-PrivateGalleryTests-dummy.m */,
+				CCB4757605186651E0DE1E6674870F07 /* Pods-PrivateGalleryTests-frameworks.sh */,
+				6110CCEC4BD88F290DC39989C5DA46AE /* Pods-PrivateGalleryTests-resources.sh */,
+				E57655CEC8CA4AA12DC7654DE979B5D2 /* Pods-PrivateGalleryTests-umbrella.h */,
+				924639F6E13C7EE05A427BC77CC7A80D /* Pods-PrivateGalleryTests.debug.xcconfig */,
+				D8ED22A84F736EE0982FCAA7F020A8B6 /* Pods-PrivateGalleryTests.release.xcconfig */,
+			);
+			name = "Pods-PrivateGalleryTests";
+			path = "Target Support Files/Pods-PrivateGalleryTests";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				1507E115706DCD01A4CA81FA912CCD27 /* Pods */,
+				F1FC62F4C5BE0376D3B7FE9A30110426 /* Products */,
+				248607021EBAF48ACB6304B59EF3233D /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8C74A00B041FA7E87EC08B0814AF6CFE /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A314C8C8E56E490E4C7BC249858228E0 /* Foundation.framework */,
+				A4270C238331061F08C237A5B6AA502A /* Photos.framework */,
+				1071312084E8D184CDB35386F24C7F21 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		D436B83AC8A96ADF7EAD2C0A0F40F82B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				39524BC861D54A6DCAC18C0BA3D70131 /* en.lproj */,
+				4B7DC0D4DDBF0DEDB6ABF47D3B8A83BE /* Images.xcassets */,
+				6D3DF12C0E8FADC8047BF33D1E385E81 /* ja.lproj */,
+				D735EA52AFF0B2DC60282F0DC55B3438 /* NohanaImagePicker.storyboard */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		DE9483AE141D9651C58EFAFAD1C1EF69 /* Pods-PrivateGalleryUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E38A876F086590B13B4A2C6C8CC94B8D /* Info.plist */,
+				8D64E7F6E11D225F5ED7E1DB3A041E62 /* Pods-PrivateGalleryUITests.modulemap */,
+				DE9830BF1AC6CA46126B846B8F4EAEC4 /* Pods-PrivateGalleryUITests-acknowledgements.markdown */,
+				9071E7AD44DCDB7FD8437451218383CD /* Pods-PrivateGalleryUITests-acknowledgements.plist */,
+				A55C57C891E4A37E84FD65675B5A3590 /* Pods-PrivateGalleryUITests-dummy.m */,
+				614BA23CF255DC21A4F4CD5C48AB2500 /* Pods-PrivateGalleryUITests-frameworks.sh */,
+				A4B208C324BB06DD0464E9451D78D6AC /* Pods-PrivateGalleryUITests-resources.sh */,
+				F0EA77CBDE9504AC5B1947C09C52CA72 /* Pods-PrivateGalleryUITests-umbrella.h */,
+				46B8D3547A070F50DE930DF723308639 /* Pods-PrivateGalleryUITests.debug.xcconfig */,
+				76385F8C235268A7305BDDC1B7C1BA6F /* Pods-PrivateGalleryUITests.release.xcconfig */,
+			);
+			name = "Pods-PrivateGalleryUITests";
+			path = "Target Support Files/Pods-PrivateGalleryUITests";
+			sourceTree = "<group>";
+		};
+		F1FC62F4C5BE0376D3B7FE9A30110426 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B0F2CE2D9D2182BC75B3E94AD63C5FD9 /* NohanaImagePicker.bundle */,
+				B543366DBAFFA61748310C39F17837E2 /* NohanaImagePicker.framework */,
+				57D4BF83F31D0983E7EB224C3357FD52 /* Pods_PrivateGallery.framework */,
+				85D1137CE3382720DD297AECAE76D912 /* Pods_PrivateGalleryTests.framework */,
+				F9C099A0D5E64E30CE016681A60D3D74 /* Pods_PrivateGalleryUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		34DE8C8800161CCBAFF78D43C9C7E66B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCB8F613FE8723E49CB367D3C3A2D8EE /* Pods-PrivateGalleryUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD88FEBF6F1EA2BDA42E1E862C13EB10 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B5CBEE029693006732227C661EF97F8 /* Pods-PrivateGalleryTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6DB791F4D3C0A8F34DE397940CDF14B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59C80FF241E83EC7F6C85AF471FE70D4 /* NohanaImagePicker-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD2DA75337F31632B4A14D8529BCDEC4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A16E0E0E0B081569A06669A6E215D0E4 /* Pods-PrivateGallery-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1CA3A09DC5C73A7CF7E166CA61C30139 /* NohanaImagePicker-NohanaImagePicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B53530DA44A91AA53578FA2D5FB286E /* Build configuration list for PBXNativeTarget "NohanaImagePicker-NohanaImagePicker" */;
+			buildPhases = (
+				D4DB68DF2F9DB5018BEAB57DF337ABA5 /* Sources */,
+				9322FA8EBEC625DDFF3DC8F6427403D5 /* Frameworks */,
+				7BBEFB5126511EE75C46C86B01BF98E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NohanaImagePicker-NohanaImagePicker";
+			productName = "NohanaImagePicker-NohanaImagePicker";
+			productReference = B0F2CE2D9D2182BC75B3E94AD63C5FD9 /* NohanaImagePicker.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		557EF6D0EC0A2C51D37F961DBB1824C0 /* NohanaImagePicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 573227A6974EDC4E193DC782D4B1CE74 /* Build configuration list for PBXNativeTarget "NohanaImagePicker" */;
+			buildPhases = (
+				A9C00B1CEBC5E7C949E20A38BC1585FC /* Sources */,
+				6044C165655A15223250308AE44210E8 /* Frameworks */,
+				DAF0527C389B5A24AA4DD9771247D618 /* Resources */,
+				D6DB791F4D3C0A8F34DE397940CDF14B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				273226BB92809AA2B01EE2AED3EBC0F4 /* PBXTargetDependency */,
+			);
+			name = NohanaImagePicker;
+			productName = NohanaImagePicker;
+			productReference = B543366DBAFFA61748310C39F17837E2 /* NohanaImagePicker.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9939494A0104CD30B9939EA782E65C0C /* Pods-PrivateGalleryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49C9F92673B3A2EA68638EF45A390761 /* Build configuration list for PBXNativeTarget "Pods-PrivateGalleryTests" */;
+			buildPhases = (
+				6ABE89BAEEC12605156027E93F137354 /* Sources */,
+				CAAB51581798C350CAAE1966C2BBF260 /* Frameworks */,
+				CD88FEBF6F1EA2BDA42E1E862C13EB10 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-PrivateGalleryTests";
+			productName = "Pods-PrivateGalleryTests";
+			productReference = 85D1137CE3382720DD297AECAE76D912 /* Pods_PrivateGalleryTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DF2B15FEF1AB5F3684FAB6A67D362B81 /* Pods-PrivateGalleryUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A87894AC0B84D53D56073CB0A8EC014 /* Build configuration list for PBXNativeTarget "Pods-PrivateGalleryUITests" */;
+			buildPhases = (
+				AD0D3259FC67AB6AA56731DB2810A9E5 /* Sources */,
+				AF13A25DD8479F3882C3202BB073E1F9 /* Frameworks */,
+				34DE8C8800161CCBAFF78D43C9C7E66B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-PrivateGalleryUITests";
+			productName = "Pods-PrivateGalleryUITests";
+			productReference = F9C099A0D5E64E30CE016681A60D3D74 /* Pods_PrivateGalleryUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E3E3BD6E108CF4E48AF7DF100F24ED84 /* Pods-PrivateGallery */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A1123C6CDF8F73821817034B87768BC /* Build configuration list for PBXNativeTarget "Pods-PrivateGallery" */;
+			buildPhases = (
+				4A5E4A338476180B6D483D558A50D20C /* Sources */,
+				76E67F7FDEBC5571B145687197014E28 /* Frameworks */,
+				FD2DA75337F31632B4A14D8529BCDEC4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB64551B22FCF62227BCED1A632870DB /* PBXTargetDependency */,
+			);
+			name = "Pods-PrivateGallery";
+			productName = "Pods-PrivateGallery";
+			productReference = 57D4BF83F31D0983E7EB224C3357FD52 /* Pods_PrivateGallery.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = F1FC62F4C5BE0376D3B7FE9A30110426 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				557EF6D0EC0A2C51D37F961DBB1824C0 /* NohanaImagePicker */,
+				1CA3A09DC5C73A7CF7E166CA61C30139 /* NohanaImagePicker-NohanaImagePicker */,
+				E3E3BD6E108CF4E48AF7DF100F24ED84 /* Pods-PrivateGallery */,
+				9939494A0104CD30B9939EA782E65C0C /* Pods-PrivateGalleryTests */,
+				DF2B15FEF1AB5F3684FAB6A67D362B81 /* Pods-PrivateGalleryUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7BBEFB5126511EE75C46C86B01BF98E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C39C55C609CA87F43248A534418A37F5 /* en.lproj in Resources */,
+				2114D0F6C2F9422AB642B1077F5BFFD3 /* Images.xcassets in Resources */,
+				DD744870624889D130BCE6109539E4CA /* ja.lproj in Resources */,
+				AF23B1055FDDB29BF5DF564D2CB30A25 /* NohanaImagePicker.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAF0527C389B5A24AA4DD9771247D618 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3E23F2016F3D2ED7245B42EB44D151A /* NohanaImagePicker.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4A5E4A338476180B6D483D558A50D20C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6D5A4C69AF3BFA03499ED1166492724 /* Pods-PrivateGallery-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6ABE89BAEEC12605156027E93F137354 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC67937DDEE44FF723777D3E7CD2867A /* Pods-PrivateGalleryTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9C00B1CEBC5E7C949E20A38BC1585FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CDC114FD6F7E3F052115CE5722BBD16 /* ActivityIndicatable.swift in Sources */,
+				5F027C2BDA58966BBBDEFF8F6D080327 /* AlbumCell.swift in Sources */,
+				60DFE12F50E0EEA8E3F7393C4EB02526 /* AlbumListEmptyIndicator.swift in Sources */,
+				D72FE7D9D2FA50D16CEA4D998F3F1CFD /* AlbumListViewController.swift in Sources */,
+				32A61E9EC20E043DDCAFBBCF4C58617C /* AnimatableNavigationController.swift in Sources */,
+				DA413D5770141E1ECA2821842106E197 /* AssetCell.swift in Sources */,
+				E9DD27C226929C3AC285F5F660049829 /* AssetDetailCell.swift in Sources */,
+				FAA34912AF96178A05E135352162BA46 /* AssetDetailListViewController.swift in Sources */,
+				A977A7C36DF16DCF94EC6AACA38E595B /* AssetListViewController.swift in Sources */,
+				39D6632C6862B66705856B5083B696FA /* ColorConfig.swift in Sources */,
+				23FF2693D93227E1637DCF75D7ECEE84 /* ContractingAnimationController.swift in Sources */,
+				8ABCA91BF7AB5E77201240FBEBE83187 /* EmptyIndicatable.swift in Sources */,
+				C0BABC068BDA7FE33E1034AD1ACFA180 /* ExpandingAnimationController.swift in Sources */,
+				C250AAC4514E2A85FF4544BC87F5F5AB /* ImageName.swift in Sources */,
+				41B5E7DB49589E0A8187FCC476171D1E /* ItemListType.swift in Sources */,
+				8700D26DC967AEE97995483B9188B20E /* MomentCell.swift in Sources */,
+				4D782DCCE6DB2831A315C3FC97DC15A6 /* MomentSectionHeaderView.swift in Sources */,
+				AB9EC2E79C50A94637139324381909A3 /* MomentViewController.swift in Sources */,
+				99A8C81EA40954C985C6DB707FDBB032 /* NohanaImagePicker-dummy.m in Sources */,
+				337C355DB1FE54DBBA930904F1047B2A /* NohanaImagePickerController.swift in Sources */,
+				860F7D81760D481041B26F47734BCE23 /* NotificationInfo.swift in Sources */,
+				8F1599D36DB6D08F0C0425382ED8ED37 /* PhotoKitAlbumList.swift in Sources */,
+				15F9513373DB6AD14F0D0D85E378C6D5 /* PhotoKitAsset.swift in Sources */,
+				492166B3B20AF78218FEC802A6911520 /* PhotoKitAssetList.swift in Sources */,
+				84B0A931B54406E4B2DE04964A743C8E /* PickedAssetList.swift in Sources */,
+				66E161FDAB08796D5CF03CE3F65565C3 /* Size.swift in Sources */,
+				B2D792D60207C4A0E59D84E20DEFD1AD /* SwipeInteractionController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD0D3259FC67AB6AA56731DB2810A9E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B2462A94408679A5746E7325BACABB9 /* Pods-PrivateGalleryUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4DB68DF2F9DB5018BEAB57DF337ABA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		273226BB92809AA2B01EE2AED3EBC0F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "NohanaImagePicker-NohanaImagePicker";
+			target = 1CA3A09DC5C73A7CF7E166CA61C30139 /* NohanaImagePicker-NohanaImagePicker */;
+			targetProxy = 8899865B63D5EFD6518961AB20BBE059 /* PBXContainerItemProxy */;
+		};
+		BB64551B22FCF62227BCED1A632870DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NohanaImagePicker;
+			target = 557EF6D0EC0A2C51D37F961DBB1824C0 /* NohanaImagePicker */;
+			targetProxy = 3D58177D4040259F9EF32580367CCF5B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		156284431C64CB05C59BDA0595A1E95A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		25A7C4EB3EB2703865B6B481091EB088 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC9301B93D24707DD29042F6CEC0843C /* NohanaImagePicker.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/NohanaImagePicker";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/NohanaImagePicker/ResourceBundle-NohanaImagePicker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = NohanaImagePicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		3FE8FAD0E50A7D6ADCA8C852FAB42499 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC9301B93D24707DD29042F6CEC0843C /* NohanaImagePicker.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/NohanaImagePicker/NohanaImagePicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NohanaImagePicker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/NohanaImagePicker/NohanaImagePicker.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = NohanaImagePicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		530C0152B4F7E00A34F46B3D171F9C59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC9301B93D24707DD29042F6CEC0843C /* NohanaImagePicker.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/NohanaImagePicker/NohanaImagePicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NohanaImagePicker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/NohanaImagePicker/NohanaImagePicker.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = NohanaImagePicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		80F0AFCE1AC7EB94DF34EEBF0755B460 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8ED22A84F736EE0982FCAA7F020A8B6 /* Pods-PrivateGalleryTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PrivateGalleryTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PrivateGalleryTests/Pods-PrivateGalleryTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PrivateGalleryTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A2B9AB197D746DA42C217C9FD731FF3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC9301B93D24707DD29042F6CEC0843C /* NohanaImagePicker.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/NohanaImagePicker";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/NohanaImagePicker/ResourceBundle-NohanaImagePicker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = NohanaImagePicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		ACFA2590A461F96BBB618820159E88E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAE8586AAB505F40983ECD88C3188472 /* Pods-PrivateGallery.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PrivateGallery/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PrivateGallery/Pods-PrivateGallery.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PrivateGallery;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B268FF8A6CDE0D9C2055313891F1E5AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76385F8C235268A7305BDDC1B7C1BA6F /* Pods-PrivateGalleryUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PrivateGalleryUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PrivateGalleryUITests/Pods-PrivateGalleryUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PrivateGalleryUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C382132BB6BF8CA1A911872A2062FD0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		C7B3AFFB8AFBFD2F008DF7A4307F8593 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 924639F6E13C7EE05A427BC77CC7A80D /* Pods-PrivateGalleryTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PrivateGalleryTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PrivateGalleryTests/Pods-PrivateGalleryTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PrivateGalleryTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E0A3B0B4EB7683ADF8ADE37BCCEDC3B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46B8D3547A070F50DE930DF723308639 /* Pods-PrivateGalleryUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PrivateGalleryUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PrivateGalleryUITests/Pods-PrivateGalleryUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PrivateGalleryUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FB6AB3A4EA5EA682FFD477A3674EDD97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D74FE12D953E6E51884DA1371055467 /* Pods-PrivateGallery.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PrivateGallery/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PrivateGallery/Pods-PrivateGallery.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PrivateGallery;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2A1123C6CDF8F73821817034B87768BC /* Build configuration list for PBXNativeTarget "Pods-PrivateGallery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACFA2590A461F96BBB618820159E88E5 /* Debug */,
+				FB6AB3A4EA5EA682FFD477A3674EDD97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B53530DA44A91AA53578FA2D5FB286E /* Build configuration list for PBXNativeTarget "NohanaImagePicker-NohanaImagePicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2B9AB197D746DA42C217C9FD731FF3F /* Debug */,
+				25A7C4EB3EB2703865B6B481091EB088 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C382132BB6BF8CA1A911872A2062FD0D /* Debug */,
+				156284431C64CB05C59BDA0595A1E95A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49C9F92673B3A2EA68638EF45A390761 /* Build configuration list for PBXNativeTarget "Pods-PrivateGalleryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7B3AFFB8AFBFD2F008DF7A4307F8593 /* Debug */,
+				80F0AFCE1AC7EB94DF34EEBF0755B460 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		573227A6974EDC4E193DC782D4B1CE74 /* Build configuration list for PBXNativeTarget "NohanaImagePicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FE8FAD0E50A7D6ADCA8C852FAB42499 /* Debug */,
+				530C0152B4F7E00A34F46B3D171F9C59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A87894AC0B84D53D56073CB0A8EC014 /* Build configuration list for PBXNativeTarget "Pods-PrivateGalleryUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0A3B0B4EB7683ADF8ADE37BCCEDC3B8 /* Debug */,
+				B268FF8A6CDE0D9C2055313891F1E5AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
