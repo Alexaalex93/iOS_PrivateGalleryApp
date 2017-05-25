@@ -37,16 +37,11 @@ class DetailViewController: UIViewController {
         let retinaMultiplier = UIScreen.main.scale
         let size = CGSize(width:screenWidth * retinaMultiplier, height:  screenHeight * retinaMultiplier)
         
-
-
         let options = PHImageRequestOptions()
         options.isSynchronous = true
         options.version = .current
         options.deliveryMode = PHImageRequestOptionsDeliveryMode.highQualityFormat
         options.resizeMode = .exact
-        
-
-
         
         PHImageManager.default().requestImage(for: asset, targetSize: size, contentMode: .aspectFit, options: options, resultHandler: { (result, _: [AnyHashable : Any]?) -> Void in
             self.imageDetail.image = result

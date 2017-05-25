@@ -1,12 +1,18 @@
 PODS:
+  - ADMozaicCollectionViewLayout (4.0.1)
+  - FMMosaicLayout (0.1.4)
   - NohanaImagePicker (0.7.1)
 
 DEPENDENCIES:
+  - ADMozaicCollectionViewLayout (~> 4.0)
+  - FMMosaicLayout
   - NohanaImagePicker
 
 SPEC CHECKSUMS:
+  ADMozaicCollectionViewLayout: 77627ecbcb9a385e9027cdaf387d03f3dafe7787
+  FMMosaicLayout: c0febf6876c987c425d7e2176d034fa7a2c98cb5
   NohanaImagePicker: ae909c23150c30e29ab2c5d48766c39eef21d790
 
-PODFILE CHECKSUM: 051063638b4d1ab41bd6f100922b329b8ff701be
+PODFILE CHECKSUM: 1e136bde59303f0426afc227ff11a13ea04b88a8
 
 COCOAPODS: 1.2.0

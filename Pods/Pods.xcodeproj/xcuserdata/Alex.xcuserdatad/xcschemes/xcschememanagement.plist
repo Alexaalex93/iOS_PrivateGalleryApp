@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>ADMozaicCollectionViewLayout.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>FMMosaicLayout.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>NohanaImagePicker-NohanaImagePicker.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -42,6 +52,16 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>7814BB29C43881C657824C85B7870715</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>84CACE4181AEB862C66D1066D7B32746</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>9939494A0104CD30B9939EA782E65C0C</key>
 		<dict>
 			<key>primary</key>
@@ -52,7 +72,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E3E3BD6E108CF4E48AF7DF100F24ED84</key>
+		<key>F4851F213AA79708C5CB7BC069D33345</key>
 		<dict>
 			<key>primary</key>
 			<true/>

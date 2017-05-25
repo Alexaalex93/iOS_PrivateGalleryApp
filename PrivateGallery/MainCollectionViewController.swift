@@ -8,10 +8,14 @@
 import UIKit
 import Photos
 import NohanaImagePicker
+import FMMosaicLayout
+import ADMozaicCollectionViewLayout
 
 private let reuseIdentifier = "Cell"
 
-class MainCollectionViewController: UICollectionViewController, NohanaImagePickerControllerDelegate {
+class MainCollectionViewController: UICollectionViewController, NohanaImagePickerControllerDelegate, ADMozaikLayoutDelegate {
+
+
     
     @IBOutlet var selectButtonOut: UIBarButtonItem!
     var cellWidth: CGFloat = 128.0
@@ -20,11 +24,20 @@ class MainCollectionViewController: UICollectionViewController, NohanaImagePicke
     var assetArray = [PHAsset] ()
     
     @IBOutlet var longPressRecog: UILongPressGestureRecognizer!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         title = "Private Gallery"
+
+        
+        createDirectory()
+        getImage() //Modificar para que lea a traves de PHAssets
+        
+        let layout = ADMozaikLayout(delegate: self)
+        self.collectionView?.collectionViewLayout = layout
+
+        
         //        myBemCheckBox.onAnimationType = .bounce
         //        myBemCheckBox.offAnimationType = .bounce
         //
@@ -50,6 +63,8 @@ class MainCollectionViewController: UICollectionViewController, NohanaImagePicke
         picker.delegate = self
         picker.numberOfColumnsInPortrait = 3
         picker.toolbarHidden = true
+        picker.maximumNumberOfSelection = 50
+        picker.shouldShowMoment = false
         present(picker, animated: true)
     }
     
@@ -60,8 +75,9 @@ class MainCollectionViewController: UICollectionViewController, NohanaImagePicke
 
     func nohanaImagePicker(_ picker: NohanaImagePickerController, didFinishPickingPhotoKitAssets pickedAssts: [PHAsset]) {
         
+        //Primero las guardo en otro directorio y despues las añado al array
+        
         for i in 0...pickedAssts.count - 1 {
-            
             if(assetArray.contains(pickedAssts[i]))
             {
                 continue
@@ -80,6 +96,56 @@ class MainCollectionViewController: UICollectionViewController, NohanaImagePicke
 
     @IBAction func addPhoto(_ sender: Any) {
         importarImagen()
+    }
+    
+
+    
+    
+    func saveImageDocumentDirectory(){
+        let fileManager = NSFileManager.defaultManager()
+        let paths = (NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as NSString).stringByAppendingPathComponent("apple.jpg")
+        let image = UIImage(named: "apple.jpg")
+        print(paths)
+        let imageData = UIImageJPEGRepresentation(image!, 0.5)
+        fileManager.createFileAtPath(paths as String, contents: imageData, attributes: nil)
+    }
+    
+    func getDirectoryPath() -> String {
+        let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
+        let documentsDirectory = paths[0]
+        return documentsDirectory
+    }
+    
+    
+    func getImage(){
+        let fileManager = NSFileManager.defaultManager()
+        let imagePAth = (self.getDirectoryPath() as NSString).stringByAppendingPathComponent("apple.jpg")
+        if fileManager.fileExistsAtPath(imagePAth){
+            self.imageView.image = UIImage(contentsOfFile: imagePAth)
+        } else {
+            print("No Image")
+        }
+    }
+    
+    func createDirectory(){
+        let fileManager = NSFileManager.defaultManager()
+        let paths = (NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as NSString).stringByAppendingPathComponent("privateGalleryDirectory")
+        if !fileManager.fileExistsAtPath(paths) {
+            try! fileManager.createDirectoryAtPath(paths, withIntermediateDirectories: true, attributes: nil)
+        } else {
+            print("Already directory created.")
+        }
+    }
+    
+    
+    func deleteDirectory(){
+        let fileManager = NSFileManager.defaultManager()
+        let paths = (NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as NSString).stringByAppendingPathComponent("privateGalleryDirectory")
+        if fileManager.fileExistsAtPath(paths){
+            try! fileManager.removeItemAtPath(paths)
+        } else {
+            print("Something wrong.")
+        }
     }
     
 //    @IBAction func longPressAction(_ sender: UILongPressGestureRecognizer) {
@@ -139,13 +205,35 @@ class MainCollectionViewController: UICollectionViewController, NohanaImagePicke
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! CellCollectionViewCell
         if (assetArray.count != 0) {
             
-            let size = CGSize(width: 128, height: 128)
+            let retinaMultiplier = UIScreen.main.scale
             
+            var size = CGSize()
+            
+                if indexPath.item == 0 {
+                    size = CGSize(width: 93 * retinaMultiplier, height: 93 * retinaMultiplier)
+                }
+                if indexPath.item % 8 == 0 {
+                    size = CGSize(width: 93 * 2 * retinaMultiplier, height: 93 * 2 * retinaMultiplier)
+
+                }
+                else if indexPath.item % 6 == 0 {
+                    
+                    size = CGSize(width: 93 * 3 * retinaMultiplier, height: 93 * retinaMultiplier)
+
+                }
+                else if indexPath.item % 4 == 0 {
+                    size = CGSize(width: 93 * retinaMultiplier, height: 93 * 3 * retinaMultiplier)
+                }
+                else {
+                    size = CGSize(width: 93 * retinaMultiplier, height: 93 * retinaMultiplier)
+
+                }
+
             let options = PHImageRequestOptions()
 
             options.isSynchronous = true
             options.version = .current
-            options.deliveryMode = .fastFormat
+            options.deliveryMode = PHImageRequestOptionsDeliveryMode.highQualityFormat
             options.resizeMode = .exact
 
             PHImageManager.default().requestImage(for: assetArray[indexPath.row], targetSize: size, contentMode: .aspectFill, options: options, resultHandler: { (result, _:[AnyHashable : Any]?) in
@@ -153,6 +241,67 @@ class MainCollectionViewController: UICollectionViewController, NohanaImagePicke
             })
         }
         return cell
+    }
+    
+    func getImageAsset(asset: PHAsset, size: CGSize) -> Void {
+        
+        let options = PHImageRequestOptions()
+        options.isSynchronous = true
+        options.version = .current
+        options.deliveryMode = PHImageRequestOptionsDeliveryMode.highQualityFormat
+        options.resizeMode = .exact
+        
+        PHImageManager.default().requestImage(for: asset, targetSize: size, contentMode: .aspectFit, options: options, resultHandler: { (result, _: [AnyHashable : Any]?) -> Void in
+            self.imageDetail.image = result
+        })
+    }
+    
+    
+    /// Method should return `ADMozaikLayoutSectionGeometryInfo` to describe specific section's geometry
+    ///
+    /// - Parameters:
+    ///   - collectionView: collection view is using layout
+    ///   - layoyt:         layout itself
+    ///   - section:        section to calculate geometry info for
+    ///
+    /// - Returns: `ADMozaikLayoutSectionGeometryInfo` struct object describes the section's geometry
+    func collectonView(_ collectionView: UICollectionView, mozaik layoyt: ADMozaikLayout, geometryInfoFor section: ADMozaikLayoutSection) -> ADMozaikLayoutSectionGeometryInfo {
+        let rowHeight: CGFloat = 93
+        let columns = [ADMozaikLayoutColumn(width: 93), ADMozaikLayoutColumn(width: 93), ADMozaikLayoutColumn(width: 93), ADMozaikLayoutColumn(width: 93)]
+        let geometryInfo = ADMozaikLayoutSectionGeometryInfo(rowHeight: rowHeight,
+                                                             columns: columns,
+                                                             minimumInteritemSpacing: 1,
+                                                             minimumLineSpacing: 1,
+                                                             sectionInset: UIEdgeInsets(top: 5, left: 0, bottom: 5, right: 0),
+                                                             headerHeight: 0, footerHeight: 0)
+        return geometryInfo
+    }
+    
+    
+    
+    /// Method should return `ADMozaikLayoutSize` for specific indexPath
+    ///
+    /// - Parameter collectionView: collection view is using layout
+    /// - Parameter layout:         layout itself
+    /// - Parameter indexPath:      indexPath of item for the size it asks for
+    ///
+    /// - Returns: `ADMozaikLayoutSize` struct object describes the size
+    func collectionView(_ collectionView: UICollectionView, mozaik layout: ADMozaikLayout, mozaikSizeForItemAt indexPath: IndexPath) -> ADMozaikLayoutSize {
+        if indexPath.item == 0 {
+            return ADMozaikLayoutSize(numberOfColumns: 1, numberOfRows: 1)
+        }
+        if indexPath.item % 8 == 0 {
+            return ADMozaikLayoutSize(numberOfColumns: 2, numberOfRows: 2)
+        }
+        else if indexPath.item % 6 == 0 {
+            return ADMozaikLayoutSize(numberOfColumns: 3, numberOfRows: 1)
+        }
+        else if indexPath.item % 4 == 0 {
+            return ADMozaikLayoutSize(numberOfColumns: 1, numberOfRows: 3)
+        }
+        else {
+            return ADMozaikLayoutSize(numberOfColumns: 1, numberOfRows: 1)
+        }
     }
     
 

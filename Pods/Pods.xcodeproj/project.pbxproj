@@ -8,54 +8,73 @@
 
 /* Begin PBXBuildFile section */
 		0B5CBEE029693006732227C661EF97F8 /* Pods-PrivateGalleryTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E57655CEC8CA4AA12DC7654DE979B5D2 /* Pods-PrivateGalleryTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		15F9513373DB6AD14F0D0D85E378C6D5 /* PhotoKitAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930E2D70387532230AF0B13BEAD270BA /* PhotoKitAsset.swift */; };
-		2114D0F6C2F9422AB642B1077F5BFFD3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B7DC0D4DDBF0DEDB6ABF47D3B8A83BE /* Images.xcassets */; };
+		105BD9FC3BD7A7FC1A86EBEF4468CB25 /* AutoEquatable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92AE541006CEDB1C742A895E8C14D09 /* AutoEquatable.generated.swift */; };
+		1126E9816DAAA195F12F188C28B7A650 /* FMMosaicLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DF7484C3E032DDBA8E4051EB6752CE05 /* FMMosaicLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		15F9513373DB6AD14F0D0D85E378C6D5 /* PhotoKitAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0C1B51699CB970D1C1781CD5886616 /* PhotoKitAsset.swift */; };
+		2114D0F6C2F9422AB642B1077F5BFFD3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 310F0D6CF35E7DD6E8EA4A2C3FF1D3CD /* Images.xcassets */; };
 		2191BB5A4520240A027AA68FCBCC7F09 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1071312084E8D184CDB35386F24C7F21 /* UIKit.framework */; };
-		23FF2693D93227E1637DCF75D7ECEE84 /* ContractingAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90828F69956CB1A56A426FC969202AA5 /* ContractingAnimationController.swift */; };
-		32A61E9EC20E043DDCAFBBCF4C58617C /* AnimatableNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43BEF3CD1FAD5E3292B7D02E5DF28F5 /* AnimatableNavigationController.swift */; };
-		337C355DB1FE54DBBA930904F1047B2A /* NohanaImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B42DDDB81476C60228BBAFEDB5E5228 /* NohanaImagePickerController.swift */; };
-		39D6632C6862B66705856B5083B696FA /* ColorConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B056D23F993338A51AA81D9DA058DB /* ColorConfig.swift */; };
-		41B5E7DB49589E0A8187FCC476171D1E /* ItemListType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CF989D9F38AB46A195296FC1E208BE /* ItemListType.swift */; };
-		492166B3B20AF78218FEC802A6911520 /* PhotoKitAssetList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9846791A18F3AFE006504D2089DEBCC1 /* PhotoKitAssetList.swift */; };
+		23FF2693D93227E1637DCF75D7ECEE84 /* ContractingAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218FDDA5B8D710B86E63822596842CD2 /* ContractingAnimationController.swift */; };
+		32A61E9EC20E043DDCAFBBCF4C58617C /* AnimatableNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB3F24DF8E16ECEDE96D83544ECE9E0 /* AnimatableNavigationController.swift */; };
+		337C355DB1FE54DBBA930904F1047B2A /* NohanaImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFC2A3583B21C63172D9980B4CCE3DE /* NohanaImagePickerController.swift */; };
+		39D6632C6862B66705856B5083B696FA /* ColorConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFBE780DED7D8C7F01A37513E2755D2 /* ColorConfig.swift */; };
+		3B109176A991BDEFCA7AB308999346F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A314C8C8E56E490E4C7BC249858228E0 /* Foundation.framework */; };
+		40B088BD19449C01926B7BC427B0BE18 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A314C8C8E56E490E4C7BC249858228E0 /* Foundation.framework */; };
+		41B5E7DB49589E0A8187FCC476171D1E /* ItemListType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B9013A31B2AE53DDA205E815DA5D57 /* ItemListType.swift */; };
+		492166B3B20AF78218FEC802A6911520 /* PhotoKitAssetList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B497108480F4393230AEB9ED23E5E91D /* PhotoKitAssetList.swift */; };
+		49CCD0AC27597B4FE7402C7A43FB0114 /* Pods-PrivateGallery-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 80BD06F914189B550FFAA25A46FCEDBD /* Pods-PrivateGallery-dummy.m */; };
+		49E9A45821B6DA7CA46EE38DEC935199 /* AutoHashable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD76D2702BF0E594802E63E8F4746216 /* AutoHashable.generated.swift */; };
 		4B2462A94408679A5746E7325BACABB9 /* Pods-PrivateGalleryUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A55C57C891E4A37E84FD65675B5A3590 /* Pods-PrivateGalleryUITests-dummy.m */; };
-		4D782DCCE6DB2831A315C3FC97DC15A6 /* MomentSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6802AEBA673EC708BA803A3F68F284 /* MomentSectionHeaderView.swift */; };
-		59C80FF241E83EC7F6C85AF471FE70D4 /* NohanaImagePicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A6ED1D32B607F7BA5386CB02D1CBF562 /* NohanaImagePicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5B127A9BF47A041796DFA80FD6364847 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A314C8C8E56E490E4C7BC249858228E0 /* Foundation.framework */; };
-		5F027C2BDA58966BBBDEFF8F6D080327 /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBE4CD4738E1BB5D35CE0E8D2DE08DA /* AlbumCell.swift */; };
-		60DFE12F50E0EEA8E3F7393C4EB02526 /* AlbumListEmptyIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5CCB52B45F21A9A7D1B80A98BFBD59 /* AlbumListEmptyIndicator.swift */; };
-		66E161FDAB08796D5CF03CE3F65565C3 /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8A2A980E75C894A60D511DC8AF2351 /* Size.swift */; };
-		7CDC114FD6F7E3F052115CE5722BBD16 /* ActivityIndicatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A1261F40E63347BBACB9B5158358D6 /* ActivityIndicatable.swift */; };
-		84B0A931B54406E4B2DE04964A743C8E /* PickedAssetList.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0F9AFA95862BE418FBD827B8B48104 /* PickedAssetList.swift */; };
-		860F7D81760D481041B26F47734BCE23 /* NotificationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81ECDC3F33CC55E178B086C6186C1ED3 /* NotificationInfo.swift */; };
-		8700D26DC967AEE97995483B9188B20E /* MomentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D278EC40773D1B30A3E588DE6B782BF /* MomentCell.swift */; };
-		8ABCA91BF7AB5E77201240FBEBE83187 /* EmptyIndicatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554761E79538B40D52AB39540898481D /* EmptyIndicatable.swift */; };
-		8F1599D36DB6D08F0C0425382ED8ED37 /* PhotoKitAlbumList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABD19EFFB383C85D4B4BDF0ED298124 /* PhotoKitAlbumList.swift */; };
-		99A8C81EA40954C985C6DB707FDBB032 /* NohanaImagePicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4BBF371A79200F2C7C31FB23DAF0C8 /* NohanaImagePicker-dummy.m */; };
-		A16E0E0E0B081569A06669A6E215D0E4 /* Pods-PrivateGallery-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 544F9A664D126718608DC3D382C97B45 /* Pods-PrivateGallery-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A977A7C36DF16DCF94EC6AACA38E595B /* AssetListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8545F670EB2554A1E8AF28EDBBBE8D1 /* AssetListViewController.swift */; };
-		AB9EC2E79C50A94637139324381909A3 /* MomentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761D4376A198DC761774B2723AC238D6 /* MomentViewController.swift */; };
-		AF23B1055FDDB29BF5DF564D2CB30A25 /* NohanaImagePicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D735EA52AFF0B2DC60282F0DC55B3438 /* NohanaImagePicker.storyboard */; };
-		B2D792D60207C4A0E59D84E20DEFD1AD /* SwipeInteractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64F5441A58769544A124131CD8E0E3 /* SwipeInteractionController.swift */; };
+		4D782DCCE6DB2831A315C3FC97DC15A6 /* MomentSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583CB4C6FE31201507E3305AF3A246CB /* MomentSectionHeaderView.swift */; };
+		4DA1E0591735D328A91AC95E295472D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A314C8C8E56E490E4C7BC249858228E0 /* Foundation.framework */; };
+		55E2D04F32F10C4A6612549EC9F36DA8 /* ADMozaikLayoutCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F8549F53450B60A487B289DEA9F038 /* ADMozaikLayoutCache.swift */; };
+		59C80FF241E83EC7F6C85AF471FE70D4 /* NohanaImagePicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F9E9C1A5816BC70B9342BF7EF2D124AF /* NohanaImagePicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F027C2BDA58966BBBDEFF8F6D080327 /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D86CB4B9C269BD5F21CC316E6AB1E5 /* AlbumCell.swift */; };
+		60DFE12F50E0EEA8E3F7393C4EB02526 /* AlbumListEmptyIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86B0D3FD44E849546248B95A56FFADE /* AlbumListEmptyIndicator.swift */; };
+		66E161FDAB08796D5CF03CE3F65565C3 /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D8BD248EC9B999311216B0D990DFA6 /* Size.swift */; };
+		796E90B4A6538E293E63E9BC3916407E /* Pods-PrivateGallery-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 544F9A664D126718608DC3D382C97B45 /* Pods-PrivateGallery-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7CDC114FD6F7E3F052115CE5722BBD16 /* ActivityIndicatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC74D21B531312ACBF254DB7BFD545D2 /* ActivityIndicatable.swift */; };
+		84B0A931B54406E4B2DE04964A743C8E /* PickedAssetList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C277C3F319D41E61FD0D8DC664A3101B /* PickedAssetList.swift */; };
+		860F7D81760D481041B26F47734BCE23 /* NotificationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC51370AB5D82AA04C37126A83A9B3F /* NotificationInfo.swift */; };
+		8700D26DC967AEE97995483B9188B20E /* MomentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4853A8A6EDACDF2EC1E650EA9EBE4BBC /* MomentCell.swift */; };
+		8ABCA91BF7AB5E77201240FBEBE83187 /* EmptyIndicatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468FF125C3F49A6B8EC2ACFCC7D0E11A /* EmptyIndicatable.swift */; };
+		8F1599D36DB6D08F0C0425382ED8ED37 /* PhotoKitAlbumList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607D30067C2A3A359437223E8EC8F5EF /* PhotoKitAlbumList.swift */; };
+		99A8C81EA40954C985C6DB707FDBB032 /* NohanaImagePicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9A89C3B28081B24BB836332D85EF87 /* NohanaImagePicker-dummy.m */; };
+		A56D5E17B01205C242C3DF61F06C5617 /* FMMosaicLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 22D47207C979A4280DC2E63E983AFF55 /* FMMosaicLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A977A7C36DF16DCF94EC6AACA38E595B /* AssetListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48500A57C87095578D01DE9D420F2D6E /* AssetListViewController.swift */; };
+		AB9EC2E79C50A94637139324381909A3 /* MomentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5F47F7A3EF7E0404C0D5F444FCB31B /* MomentViewController.swift */; };
+		AF23B1055FDDB29BF5DF564D2CB30A25 /* NohanaImagePicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DC1B3BE9C78330013D937D59BA2F494 /* NohanaImagePicker.storyboard */; };
+		B1F79A7AB3539B8EBC9137873977C529 /* ADMozaikLayoutDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C30DF64DDAF492E163F3CC5333505AC /* ADMozaikLayoutDelegate.swift */; };
+		B2D792D60207C4A0E59D84E20DEFD1AD /* SwipeInteractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4FB7F35D6CB7989CDF8875DA90E6CC /* SwipeInteractionController.swift */; };
+		B3985E1601B83B18E354031CA6A29A3A /* ADMozaikLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA98BFCFCA36AE7C0A5C506CB1C0BCD /* ADMozaikLayout.swift */; };
 		B8046725175F04E6C9193DAE82BC647E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A314C8C8E56E490E4C7BC249858228E0 /* Foundation.framework */; };
+		BAF079D6E74741F61933CCF57C0D8ADD /* ADMozaikLayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C91CFAECAFFAE37B69CDE77D12492C /* ADMozaikLayoutAttributes.swift */; };
 		BE029883CE2081BEACF0E70B78D4668D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A314C8C8E56E490E4C7BC249858228E0 /* Foundation.framework */; };
-		C0BABC068BDA7FE33E1034AD1ACFA180 /* ExpandingAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606B559BBAB76115E930CCDDA10A272C /* ExpandingAnimationController.swift */; };
-		C250AAC4514E2A85FF4544BC87F5F5AB /* ImageName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380FDB2A7ECD0994F635757F4CCC7586 /* ImageName.swift */; };
-		C39C55C609CA87F43248A534418A37F5 /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 39524BC861D54A6DCAC18C0BA3D70131 /* en.lproj */; };
-		C3E23F2016F3D2ED7245B42EB44D151A /* NohanaImagePicker.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B0F2CE2D9D2182BC75B3E94AD63C5FD9 /* NohanaImagePicker.bundle */; };
+		C0BABC068BDA7FE33E1034AD1ACFA180 /* ExpandingAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FA375FBFB9F76C1B4BB67D996EAE70 /* ExpandingAnimationController.swift */; };
+		C250AAC4514E2A85FF4544BC87F5F5AB /* ImageName.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4A052C6619035D226E6BC3FEB988B9 /* ImageName.swift */; };
+		C39C55C609CA87F43248A534418A37F5 /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 8A6EED886E69AC0A22B234085F9531C6 /* en.lproj */; };
+		C3E23F2016F3D2ED7245B42EB44D151A /* NohanaImagePicker.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 38D8C84173D960FC29CF1BFDE83D6229 /* NohanaImagePicker.bundle */; };
 		C76649AA48340C2EA677526F81407B11 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A314C8C8E56E490E4C7BC249858228E0 /* Foundation.framework */; };
-		D6D5A4C69AF3BFA03499ED1166492724 /* Pods-PrivateGallery-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 80BD06F914189B550FFAA25A46FCEDBD /* Pods-PrivateGallery-dummy.m */; };
-		D72FE7D9D2FA50D16CEA4D998F3F1CFD /* AlbumListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0323076D327DE21AD3913EF7CFDE112 /* AlbumListViewController.swift */; };
+		D0E1426C916F6AF2F5BD2746461C0CDC /* FMMosaicLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8DB34ABFCA70BAB53F3AA071AAC252 /* FMMosaicLayout-dummy.m */; };
+		D3A5F76842FF26B12FF5A269337F4167 /* ADMozaicCollectionViewLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B16A44EEE87AC1653646DE21944EF58 /* ADMozaicCollectionViewLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D62DE57378002B3DF43AD16AAFE120E2 /* FMMosaicLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD4EBEA72E94AEB9DB4B3200797B2BF /* FMMosaicLayout.m */; };
+		D72FE7D9D2FA50D16CEA4D998F3F1CFD /* AlbumListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0693E1DBC180DDE68C1187A154A770C /* AlbumListViewController.swift */; };
 		D7A0CAC30F5D8E1788F0AF46F24EA246 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4270C238331061F08C237A5B6AA502A /* Photos.framework */; };
-		DA413D5770141E1ECA2821842106E197 /* AssetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82461EA62DE48532020319DC92C3DB8 /* AssetCell.swift */; };
+		DA413D5770141E1ECA2821842106E197 /* AssetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4980786BD2B1779C461DFD92BA998C29 /* AssetCell.swift */; };
 		DC67937DDEE44FF723777D3E7CD2867A /* Pods-PrivateGalleryTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B17B245556F449A37A95E2A5FFC4E53D /* Pods-PrivateGalleryTests-dummy.m */; };
 		DCB8F613FE8723E49CB367D3C3A2D8EE /* Pods-PrivateGalleryUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F0EA77CBDE9504AC5B1947C09C52CA72 /* Pods-PrivateGalleryUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DD744870624889D130BCE6109539E4CA /* ja.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 6D3DF12C0E8FADC8047BF33D1E385E81 /* ja.lproj */; };
-		E9DD27C226929C3AC285F5F660049829 /* AssetDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54028BB85C499AE26E7BE41FCC9B6319 /* AssetDetailCell.swift */; };
-		FAA34912AF96178A05E135352162BA46 /* AssetDetailListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C699F8E88877A4AB026FA498522CDCBA /* AssetDetailListViewController.swift */; };
+		DD744870624889D130BCE6109539E4CA /* ja.lproj in Resources */ = {isa = PBXBuildFile; fileRef = B84705E728C2F0B9E64908EA996A0674 /* ja.lproj */; };
+		E5369749BCC13E447BD94F3E1EFFC567 /* ADMozaikLayoutStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE1C701549C812CA74CA9774C0B190C /* ADMozaikLayoutStructs.swift */; };
+		E5AF69DCBC7C39CE7493B5A25BD03EE2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1071312084E8D184CDB35386F24C7F21 /* UIKit.framework */; };
+		E7D8EDFAF1605931B0B20017B718E006 /* ADMozaicCollectionViewLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F647630BA0216D20B2150B54768FE632 /* ADMozaicCollectionViewLayout-dummy.m */; };
+		E9DD27C226929C3AC285F5F660049829 /* AssetDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEE4FCF73DE7C263CFE90350AB0BB58 /* AssetDetailCell.swift */; };
+		F8DB51FF8D553F3AD28098757AC2EA2A /* PhantomProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55DB055E8F8EFCEBD19AEAB10F57F00 /* PhantomProtocols.swift */; };
+		FAA34912AF96178A05E135352162BA46 /* AssetDetailListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860CB63357E982995A2B498F823D90A4 /* AssetDetailListViewController.swift */; };
+		FC5A9DD228CA8B6430B3C22758F551D6 /* ADMozaikLayoutSectionMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BF6875874419569B34EC14B59EFDBC /* ADMozaikLayoutSectionMatrix.swift */; };
+		FD44701E90E3CA4BBE6536F5E7EDB040 /* ADMozaikLayoutSectionGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE353FDC3CCFB9E63870C40A6EA4FD5 /* ADMozaikLayoutSectionGeometry.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3D58177D4040259F9EF32580367CCF5B /* PBXContainerItemProxy */ = {
+		4BFCC72E12A1DA29793944BC576DC20D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -69,88 +88,144 @@
 			remoteGlobalIDString = 1CA3A09DC5C73A7CF7E166CA61C30139;
 			remoteInfo = "NohanaImagePicker-NohanaImagePicker";
 		};
+		9303EB63ECF2C1ECE6B7E4F51C7FA53D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7814BB29C43881C657824C85B7870715;
+			remoteInfo = ADMozaicCollectionViewLayout;
+		};
+		D0EC435004FF21A007FF5EA20231FDE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84CACE4181AEB862C66D1066D7B32746;
+			remoteInfo = FMMosaicLayout;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0D6802AEBA673EC708BA803A3F68F284 /* MomentSectionHeaderView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MomentSectionHeaderView.swift; path = NohanaImagePicker/MomentSectionHeaderView.swift; sourceTree = "<group>"; };
+		0B16A44EEE87AC1653646DE21944EF58 /* ADMozaicCollectionViewLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ADMozaicCollectionViewLayout-umbrella.h"; sourceTree = "<group>"; };
 		0FD1D465C1C92C608F77E43F4F9B6133 /* Pods-PrivateGallery-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PrivateGallery-acknowledgements.plist"; sourceTree = "<group>"; };
 		1071312084E8D184CDB35386F24C7F21 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		14A1261F40E63347BBACB9B5158358D6 /* ActivityIndicatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActivityIndicatable.swift; path = NohanaImagePicker/ActivityIndicatable.swift; sourceTree = "<group>"; };
+		1C30DF64DDAF492E163F3CC5333505AC /* ADMozaikLayoutDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ADMozaikLayoutDelegate.swift; path = ADMozaikCollectionViewLayout/Public/ADMozaikLayoutDelegate.swift; sourceTree = "<group>"; };
 		1CD3F62C1E117E7F05C97951CEB02693 /* Pods-PrivateGallery.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-PrivateGallery.modulemap"; sourceTree = "<group>"; };
+		218FDDA5B8D710B86E63822596842CD2 /* ContractingAnimationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContractingAnimationController.swift; path = NohanaImagePicker/ContractingAnimationController.swift; sourceTree = "<group>"; };
+		22D47207C979A4280DC2E63E983AFF55 /* FMMosaicLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMMosaicLayout.h; path = Pod/Classes/FMMosaicLayout.h; sourceTree = "<group>"; };
 		2957BE7711472E052375916D341A9917 /* Pods-PrivateGallery-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PrivateGallery-resources.sh"; sourceTree = "<group>"; };
-		380FDB2A7ECD0994F635757F4CCC7586 /* ImageName.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageName.swift; path = NohanaImagePicker/ImageName.swift; sourceTree = "<group>"; };
-		39524BC861D54A6DCAC18C0BA3D70131 /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = en.lproj; path = NohanaImagePicker/en.lproj; sourceTree = "<group>"; };
-		3B42DDDB81476C60228BBAFEDB5E5228 /* NohanaImagePickerController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NohanaImagePickerController.swift; path = NohanaImagePicker/NohanaImagePickerController.swift; sourceTree = "<group>"; };
+		29FA375FBFB9F76C1B4BB67D996EAE70 /* ExpandingAnimationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpandingAnimationController.swift; path = NohanaImagePicker/ExpandingAnimationController.swift; sourceTree = "<group>"; };
+		2BFBE780DED7D8C7F01A37513E2755D2 /* ColorConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorConfig.swift; path = NohanaImagePicker/ColorConfig.swift; sourceTree = "<group>"; };
+		2DC1B3BE9C78330013D937D59BA2F494 /* NohanaImagePicker.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; name = NohanaImagePicker.storyboard; path = NohanaImagePicker/NohanaImagePicker.storyboard; sourceTree = "<group>"; };
+		2E9A89C3B28081B24BB836332D85EF87 /* NohanaImagePicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NohanaImagePicker-dummy.m"; sourceTree = "<group>"; };
+		310F0D6CF35E7DD6E8EA4A2C3FF1D3CD /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = NohanaImagePicker/Images.xcassets; sourceTree = "<group>"; };
+		3715173615B4FF808305CEDEA51DFFB2 /* FMMosaicLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FMMosaicLayout-prefix.pch"; sourceTree = "<group>"; };
+		38D8C84173D960FC29CF1BFDE83D6229 /* NohanaImagePicker.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = NohanaImagePicker.bundle; path = NohanaImagePicker.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		40BF6875874419569B34EC14B59EFDBC /* ADMozaikLayoutSectionMatrix.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ADMozaikLayoutSectionMatrix.swift; path = ADMozaikCollectionViewLayout/Private/ADMozaikLayoutSectionMatrix.swift; sourceTree = "<group>"; };
 		40E948A67739D615714CC4EB00BFC69C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		414A200ABBC93728475D6E0E4E469D50 /* Pods-PrivateGalleryTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PrivateGalleryTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		468FF125C3F49A6B8EC2ACFCC7D0E11A /* EmptyIndicatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EmptyIndicatable.swift; path = NohanaImagePicker/EmptyIndicatable.swift; sourceTree = "<group>"; };
 		46B8D3547A070F50DE930DF723308639 /* Pods-PrivateGalleryUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PrivateGalleryUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		4B7DC0D4DDBF0DEDB6ABF47D3B8A83BE /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = NohanaImagePicker/Images.xcassets; sourceTree = "<group>"; };
-		54028BB85C499AE26E7BE41FCC9B6319 /* AssetDetailCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssetDetailCell.swift; path = NohanaImagePicker/AssetDetailCell.swift; sourceTree = "<group>"; };
+		48500A57C87095578D01DE9D420F2D6E /* AssetListViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssetListViewController.swift; path = NohanaImagePicker/AssetListViewController.swift; sourceTree = "<group>"; };
+		4853A8A6EDACDF2EC1E650EA9EBE4BBC /* MomentCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MomentCell.swift; path = NohanaImagePicker/MomentCell.swift; sourceTree = "<group>"; };
+		486D1184AEE85987ED619FD16EC7233E /* NohanaImagePicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = NohanaImagePicker.modulemap; sourceTree = "<group>"; };
+		4980786BD2B1779C461DFD92BA998C29 /* AssetCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssetCell.swift; path = NohanaImagePicker/AssetCell.swift; sourceTree = "<group>"; };
+		4A5F47F7A3EF7E0404C0D5F444FCB31B /* MomentViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MomentViewController.swift; path = NohanaImagePicker/MomentViewController.swift; sourceTree = "<group>"; };
+		4CD4EBEA72E94AEB9DB4B3200797B2BF /* FMMosaicLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMMosaicLayout.m; path = Pod/Classes/FMMosaicLayout.m; sourceTree = "<group>"; };
+		53B55E7DC77FF86810FD323D9841F5B8 /* NohanaImagePicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NohanaImagePicker.framework; path = NohanaImagePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		53B9013A31B2AE53DDA205E815DA5D57 /* ItemListType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ItemListType.swift; path = NohanaImagePicker/ItemListType.swift; sourceTree = "<group>"; };
 		544F9A664D126718608DC3D382C97B45 /* Pods-PrivateGallery-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PrivateGallery-umbrella.h"; sourceTree = "<group>"; };
-		554761E79538B40D52AB39540898481D /* EmptyIndicatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EmptyIndicatable.swift; path = NohanaImagePicker/EmptyIndicatable.swift; sourceTree = "<group>"; };
-		57D4BF83F31D0983E7EB224C3357FD52 /* Pods_PrivateGallery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PrivateGallery.framework; path = "Pods-PrivateGallery.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		583CB4C6FE31201507E3305AF3A246CB /* MomentSectionHeaderView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MomentSectionHeaderView.swift; path = NohanaImagePicker/MomentSectionHeaderView.swift; sourceTree = "<group>"; };
+		5CE1C701549C812CA74CA9774C0B190C /* ADMozaikLayoutStructs.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ADMozaikLayoutStructs.swift; path = ADMozaikCollectionViewLayout/Public/ADMozaikLayoutStructs.swift; sourceTree = "<group>"; };
 		5D74FE12D953E6E51884DA1371055467 /* Pods-PrivateGallery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PrivateGallery.release.xcconfig"; sourceTree = "<group>"; };
-		606B559BBAB76115E930CCDDA10A272C /* ExpandingAnimationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpandingAnimationController.swift; path = NohanaImagePicker/ExpandingAnimationController.swift; sourceTree = "<group>"; };
+		5FE353FDC3CCFB9E63870C40A6EA4FD5 /* ADMozaikLayoutSectionGeometry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ADMozaikLayoutSectionGeometry.swift; path = ADMozaikCollectionViewLayout/Private/ADMozaikLayoutSectionGeometry.swift; sourceTree = "<group>"; };
+		607D30067C2A3A359437223E8EC8F5EF /* PhotoKitAlbumList.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhotoKitAlbumList.swift; path = NohanaImagePicker/PhotoKitAlbumList.swift; sourceTree = "<group>"; };
 		6110CCEC4BD88F290DC39989C5DA46AE /* Pods-PrivateGalleryTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PrivateGalleryTests-resources.sh"; sourceTree = "<group>"; };
 		614BA23CF255DC21A4F4CD5C48AB2500 /* Pods-PrivateGalleryUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PrivateGalleryUITests-frameworks.sh"; sourceTree = "<group>"; };
 		6513D143E47D0188ACAF01AAA1A32CFE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6D3DF12C0E8FADC8047BF33D1E385E81 /* ja.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ja.lproj; path = NohanaImagePicker/ja.lproj; sourceTree = "<group>"; };
-		6D5CCB52B45F21A9A7D1B80A98BFBD59 /* AlbumListEmptyIndicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlbumListEmptyIndicator.swift; path = NohanaImagePicker/AlbumListEmptyIndicator.swift; sourceTree = "<group>"; };
-		761D4376A198DC761774B2723AC238D6 /* MomentViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MomentViewController.swift; path = NohanaImagePicker/MomentViewController.swift; sourceTree = "<group>"; };
+		6EEE4FCF73DE7C263CFE90350AB0BB58 /* AssetDetailCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssetDetailCell.swift; path = NohanaImagePicker/AssetDetailCell.swift; sourceTree = "<group>"; };
 		76385F8C235268A7305BDDC1B7C1BA6F /* Pods-PrivateGalleryUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PrivateGalleryUITests.release.xcconfig"; sourceTree = "<group>"; };
-		7C25C550D92B8F36F75CE4033DBDB1CC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76C904C050ACDEE69FD50F7A1C8B65A5 /* ADMozaicCollectionViewLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ADMozaicCollectionViewLayout.xcconfig; sourceTree = "<group>"; };
+		7902D7D8EB2E90F2D4B6ADA4BCE01CF4 /* ADMozaicCollectionViewLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ADMozaicCollectionViewLayout-prefix.pch"; sourceTree = "<group>"; };
+		7C8954D347E7A8929ECC63372F605679 /* NohanaImagePicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NohanaImagePicker.xcconfig; sourceTree = "<group>"; };
 		80BD06F914189B550FFAA25A46FCEDBD /* Pods-PrivateGallery-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PrivateGallery-dummy.m"; sourceTree = "<group>"; };
 		81758DC01729A273BC97E4D1B23C7A14 /* Pods-PrivateGalleryTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PrivateGalleryTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		81ECDC3F33CC55E178B086C6186C1ED3 /* NotificationInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NotificationInfo.swift; path = NohanaImagePicker/NotificationInfo.swift; sourceTree = "<group>"; };
-		85D1137CE3382720DD297AECAE76D912 /* Pods_PrivateGalleryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PrivateGalleryTests.framework; path = "Pods-PrivateGalleryTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81C855FFA9D70DF22F51309FB10D078D /* ADMozaicCollectionViewLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ADMozaicCollectionViewLayout.framework; path = ADMozaicCollectionViewLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		860CB63357E982995A2B498F823D90A4 /* AssetDetailListViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssetDetailListViewController.swift; path = NohanaImagePicker/AssetDetailListViewController.swift; sourceTree = "<group>"; };
+		861908B7E7BCAC4F0BB00EF8C550B739 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87D86CB4B9C269BD5F21CC316E6AB1E5 /* AlbumCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlbumCell.swift; path = NohanaImagePicker/AlbumCell.swift; sourceTree = "<group>"; };
+		8A6EED886E69AC0A22B234085F9531C6 /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = en.lproj; path = NohanaImagePicker/en.lproj; sourceTree = "<group>"; };
+		8AC51370AB5D82AA04C37126A83A9B3F /* NotificationInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NotificationInfo.swift; path = NohanaImagePicker/NotificationInfo.swift; sourceTree = "<group>"; };
 		8D64E7F6E11D225F5ED7E1DB3A041E62 /* Pods-PrivateGalleryUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-PrivateGalleryUITests.modulemap"; sourceTree = "<group>"; };
-		8FBE4CD4738E1BB5D35CE0E8D2DE08DA /* AlbumCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlbumCell.swift; path = NohanaImagePicker/AlbumCell.swift; sourceTree = "<group>"; };
+		8D6E1A16F186E849E38A5E04BB1D81D1 /* Pods_PrivateGallery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PrivateGallery.framework; path = "Pods-PrivateGallery.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FA98BFCFCA36AE7C0A5C506CB1C0BCD /* ADMozaikLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ADMozaikLayout.swift; path = ADMozaikCollectionViewLayout/Public/ADMozaikLayout.swift; sourceTree = "<group>"; };
 		9071E7AD44DCDB7FD8437451218383CD /* Pods-PrivateGalleryUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PrivateGalleryUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		90828F69956CB1A56A426FC969202AA5 /* ContractingAnimationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContractingAnimationController.swift; path = NohanaImagePicker/ContractingAnimationController.swift; sourceTree = "<group>"; };
 		924639F6E13C7EE05A427BC77CC7A80D /* Pods-PrivateGalleryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PrivateGalleryTests.debug.xcconfig"; sourceTree = "<group>"; };
-		930E2D70387532230AF0B13BEAD270BA /* PhotoKitAsset.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhotoKitAsset.swift; path = NohanaImagePicker/PhotoKitAsset.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9846791A18F3AFE006504D2089DEBCC1 /* PhotoKitAssetList.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhotoKitAssetList.swift; path = NohanaImagePicker/PhotoKitAssetList.swift; sourceTree = "<group>"; };
-		9D278EC40773D1B30A3E588DE6B782BF /* MomentCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MomentCell.swift; path = NohanaImagePicker/MomentCell.swift; sourceTree = "<group>"; };
+		9ACD6C212B1BCE2D39DEAA95C8FA0141 /* ResourceBundle-NohanaImagePicker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-NohanaImagePicker-Info.plist"; sourceTree = "<group>"; };
+		9DFC2A3583B21C63172D9980B4CCE3DE /* NohanaImagePickerController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NohanaImagePickerController.swift; path = NohanaImagePicker/NohanaImagePickerController.swift; sourceTree = "<group>"; };
+		9E55B10F2E7DBF68944A0E7DBF679B12 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E8DB34ABFCA70BAB53F3AA071AAC252 /* FMMosaicLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FMMosaicLayout-dummy.m"; sourceTree = "<group>"; };
+		9FB3F24DF8E16ECEDE96D83544ECE9E0 /* AnimatableNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatableNavigationController.swift; path = NohanaImagePicker/AnimatableNavigationController.swift; sourceTree = "<group>"; };
 		A314C8C8E56E490E4C7BC249858228E0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		A4270C238331061F08C237A5B6AA502A /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Photos.framework; sourceTree = DEVELOPER_DIR; };
 		A4B208C324BB06DD0464E9451D78D6AC /* Pods-PrivateGalleryUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PrivateGalleryUITests-resources.sh"; sourceTree = "<group>"; };
 		A55C57C891E4A37E84FD65675B5A3590 /* Pods-PrivateGalleryUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PrivateGalleryUITests-dummy.m"; sourceTree = "<group>"; };
-		A6ED1D32B607F7BA5386CB02D1CBF562 /* NohanaImagePicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NohanaImagePicker-umbrella.h"; sourceTree = "<group>"; };
-		A9CF989D9F38AB46A195296FC1E208BE /* ItemListType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ItemListType.swift; path = NohanaImagePicker/ItemListType.swift; sourceTree = "<group>"; };
-		AA8A2A980E75C894A60D511DC8AF2351 /* Size.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Size.swift; path = NohanaImagePicker/Size.swift; sourceTree = "<group>"; };
+		A5D3BE06136628AD4B61DC2BDD857261 /* FMMosaicLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FMMosaicLayout.xcconfig; sourceTree = "<group>"; };
+		A5F8549F53450B60A487B289DEA9F038 /* ADMozaikLayoutCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ADMozaikLayoutCache.swift; path = ADMozaikCollectionViewLayout/Private/ADMozaikLayoutCache.swift; sourceTree = "<group>"; };
+		A92AE541006CEDB1C742A895E8C14D09 /* AutoEquatable.generated.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AutoEquatable.generated.swift; path = ADMozaikCollectionViewLayout/Sourcery/CodeGenerated/AutoEquatable.generated.swift; sourceTree = "<group>"; };
 		AAE8586AAB505F40983ECD88C3188472 /* Pods-PrivateGallery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PrivateGallery.debug.xcconfig"; sourceTree = "<group>"; };
-		AF64F5441A58769544A124131CD8E0E3 /* SwipeInteractionController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeInteractionController.swift; path = NohanaImagePicker/SwipeInteractionController.swift; sourceTree = "<group>"; };
-		B0F2CE2D9D2182BC75B3E94AD63C5FD9 /* NohanaImagePicker.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = NohanaImagePicker.bundle; path = NohanaImagePicker.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1751147715AFE00E837C3751710A998 /* Pods-PrivateGallery-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PrivateGallery-acknowledgements.markdown"; sourceTree = "<group>"; };
 		B17B245556F449A37A95E2A5FFC4E53D /* Pods-PrivateGalleryTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PrivateGalleryTests-dummy.m"; sourceTree = "<group>"; };
-		B543366DBAFFA61748310C39F17837E2 /* NohanaImagePicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NohanaImagePicker.framework; path = NohanaImagePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B6EAA51E9BBDA75C2335E9D11CD83C6A /* NohanaImagePicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = NohanaImagePicker.modulemap; sourceTree = "<group>"; };
-		C699F8E88877A4AB026FA498522CDCBA /* AssetDetailListViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssetDetailListViewController.swift; path = NohanaImagePicker/AssetDetailListViewController.swift; sourceTree = "<group>"; };
+		B497108480F4393230AEB9ED23E5E91D /* PhotoKitAssetList.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhotoKitAssetList.swift; path = NohanaImagePicker/PhotoKitAssetList.swift; sourceTree = "<group>"; };
+		B715DE53AAAA83F9345A2BFECB66150E /* Pods_PrivateGalleryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PrivateGalleryTests.framework; path = "Pods-PrivateGalleryTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B84705E728C2F0B9E64908EA996A0674 /* ja.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ja.lproj; path = NohanaImagePicker/ja.lproj; sourceTree = "<group>"; };
+		C0C0C514CF9D2F61C04681C3EDDE3D3A /* Pods_PrivateGalleryUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PrivateGalleryUITests.framework; path = "Pods-PrivateGalleryUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C277C3F319D41E61FD0D8DC664A3101B /* PickedAssetList.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PickedAssetList.swift; path = NohanaImagePicker/PickedAssetList.swift; sourceTree = "<group>"; };
+		C86B0D3FD44E849546248B95A56FFADE /* AlbumListEmptyIndicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlbumListEmptyIndicator.swift; path = NohanaImagePicker/AlbumListEmptyIndicator.swift; sourceTree = "<group>"; };
 		C88F9F1C41FE9FA625B806859CFDAC28 /* Pods-PrivateGallery-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PrivateGallery-frameworks.sh"; sourceTree = "<group>"; };
-		CC9301B93D24707DD29042F6CEC0843C /* NohanaImagePicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NohanaImagePicker.xcconfig; sourceTree = "<group>"; };
 		CCB4757605186651E0DE1E6674870F07 /* Pods-PrivateGalleryTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PrivateGalleryTests-frameworks.sh"; sourceTree = "<group>"; };
-		D43BEF3CD1FAD5E3292B7D02E5DF28F5 /* AnimatableNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatableNavigationController.swift; path = NohanaImagePicker/AnimatableNavigationController.swift; sourceTree = "<group>"; };
-		D59F7993699511BC9D34C2BB6745279B /* ResourceBundle-NohanaImagePicker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-NohanaImagePicker-Info.plist"; sourceTree = "<group>"; };
-		D735EA52AFF0B2DC60282F0DC55B3438 /* NohanaImagePicker.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; name = NohanaImagePicker.storyboard; path = NohanaImagePicker/NohanaImagePicker.storyboard; sourceTree = "<group>"; };
-		D8545F670EB2554A1E8AF28EDBBBE8D1 /* AssetListViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssetListViewController.swift; path = NohanaImagePicker/AssetListViewController.swift; sourceTree = "<group>"; };
+		CD76D2702BF0E594802E63E8F4746216 /* AutoHashable.generated.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AutoHashable.generated.swift; path = ADMozaikCollectionViewLayout/Sourcery/CodeGenerated/AutoHashable.generated.swift; sourceTree = "<group>"; };
+		D4AC9DB35982E7D3FAD79FC3EE49A5C4 /* FMMosaicLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = FMMosaicLayout.modulemap; sourceTree = "<group>"; };
 		D8ED22A84F736EE0982FCAA7F020A8B6 /* Pods-PrivateGalleryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PrivateGalleryTests.release.xcconfig"; sourceTree = "<group>"; };
-		DA4BBF371A79200F2C7C31FB23DAF0C8 /* NohanaImagePicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NohanaImagePicker-dummy.m"; sourceTree = "<group>"; };
 		DE9830BF1AC6CA46126B846B8F4EAEC4 /* Pods-PrivateGalleryUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PrivateGalleryUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E0B056D23F993338A51AA81D9DA058DB /* ColorConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorConfig.swift; path = NohanaImagePicker/ColorConfig.swift; sourceTree = "<group>"; };
+		DF7484C3E032DDBA8E4051EB6752CE05 /* FMMosaicLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FMMosaicLayout-umbrella.h"; sourceTree = "<group>"; };
 		E38A876F086590B13B4A2C6C8CC94B8D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3C91CFAECAFFAE37B69CDE77D12492C /* ADMozaikLayoutAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ADMozaikLayoutAttributes.swift; path = ADMozaikCollectionViewLayout/Private/ADMozaikLayoutAttributes.swift; sourceTree = "<group>"; };
+		E3D8BD248EC9B999311216B0D990DFA6 /* Size.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Size.swift; path = NohanaImagePicker/Size.swift; sourceTree = "<group>"; };
 		E57655CEC8CA4AA12DC7654DE979B5D2 /* Pods-PrivateGalleryTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PrivateGalleryTests-umbrella.h"; sourceTree = "<group>"; };
-		E6A7C265E0E0C5377403EC89D8A4461A /* NohanaImagePicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NohanaImagePicker-prefix.pch"; sourceTree = "<group>"; };
-		EABD19EFFB383C85D4B4BDF0ED298124 /* PhotoKitAlbumList.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhotoKitAlbumList.swift; path = NohanaImagePicker/PhotoKitAlbumList.swift; sourceTree = "<group>"; };
-		ED0F9AFA95862BE418FBD827B8B48104 /* PickedAssetList.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PickedAssetList.swift; path = NohanaImagePicker/PickedAssetList.swift; sourceTree = "<group>"; };
-		F0323076D327DE21AD3913EF7CFDE112 /* AlbumListViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlbumListViewController.swift; path = NohanaImagePicker/AlbumListViewController.swift; sourceTree = "<group>"; };
+		EA0C1B51699CB970D1C1781CD5886616 /* PhotoKitAsset.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhotoKitAsset.swift; path = NohanaImagePicker/PhotoKitAsset.swift; sourceTree = "<group>"; };
+		EC0B25D6E5B9D5A42A5716A5D026AFD0 /* FMMosaicLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FMMosaicLayout.framework; path = FMMosaicLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC74D21B531312ACBF254DB7BFD545D2 /* ActivityIndicatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActivityIndicatable.swift; path = NohanaImagePicker/ActivityIndicatable.swift; sourceTree = "<group>"; };
+		F0693E1DBC180DDE68C1187A154A770C /* AlbumListViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlbumListViewController.swift; path = NohanaImagePicker/AlbumListViewController.swift; sourceTree = "<group>"; };
 		F0EA77CBDE9504AC5B1947C09C52CA72 /* Pods-PrivateGalleryUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PrivateGalleryUITests-umbrella.h"; sourceTree = "<group>"; };
 		F16157EE5D0F64EA65D8376486468151 /* Pods-PrivateGalleryTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-PrivateGalleryTests.modulemap"; sourceTree = "<group>"; };
-		F82461EA62DE48532020319DC92C3DB8 /* AssetCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssetCell.swift; path = NohanaImagePicker/AssetCell.swift; sourceTree = "<group>"; };
-		F9C099A0D5E64E30CE016681A60D3D74 /* Pods_PrivateGalleryUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PrivateGalleryUITests.framework; path = "Pods-PrivateGalleryUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F55DB055E8F8EFCEBD19AEAB10F57F00 /* PhantomProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhantomProtocols.swift; path = ADMozaikCollectionViewLayout/Public/PhantomProtocols.swift; sourceTree = "<group>"; };
+		F6253C38B22696B0F8734CB6ECA7020E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F647630BA0216D20B2150B54768FE632 /* ADMozaicCollectionViewLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ADMozaicCollectionViewLayout-dummy.m"; sourceTree = "<group>"; };
+		F7975635AB058C289FF965B1DD08A30B /* NohanaImagePicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NohanaImagePicker-prefix.pch"; sourceTree = "<group>"; };
+		F7ABAB171D7958BC4374DEAF2FC7977A /* ADMozaicCollectionViewLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ADMozaicCollectionViewLayout.modulemap; sourceTree = "<group>"; };
+		F9E9C1A5816BC70B9342BF7EF2D124AF /* NohanaImagePicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NohanaImagePicker-umbrella.h"; sourceTree = "<group>"; };
+		FA4A052C6619035D226E6BC3FEB988B9 /* ImageName.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageName.swift; path = NohanaImagePicker/ImageName.swift; sourceTree = "<group>"; };
+		FB4FB7F35D6CB7989CDF8875DA90E6CC /* SwipeInteractionController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeInteractionController.swift; path = NohanaImagePicker/SwipeInteractionController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		07E7DAD1B0004AAD2265C6316D517516 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DA1E0591735D328A91AC95E295472D9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		445E74570470855983DB964589AE78FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B109176A991BDEFCA7AB308999346F2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6044C165655A15223250308AE44210E8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -161,11 +236,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		76E67F7FDEBC5571B145687197014E28 /* Frameworks */ = {
+		89E0FFD54EC9CE1330FBDD5849506D45 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B127A9BF47A041796DFA80FD6364847 /* Foundation.framework in Frameworks */,
+				40B088BD19449C01926B7BC427B0BE18 /* Foundation.framework in Frameworks */,
+				E5AF69DCBC7C39CE7493B5A25BD03EE2 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,19 +271,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0771AEF8E268F1E169104A4DE88D7FCD /* Support Files */ = {
+		1020A9259D3217A09550EF0B8D235DC3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7C25C550D92B8F36F75CE4033DBDB1CC /* Info.plist */,
-				B6EAA51E9BBDA75C2335E9D11CD83C6A /* NohanaImagePicker.modulemap */,
-				CC9301B93D24707DD29042F6CEC0843C /* NohanaImagePicker.xcconfig */,
-				DA4BBF371A79200F2C7C31FB23DAF0C8 /* NohanaImagePicker-dummy.m */,
-				E6A7C265E0E0C5377403EC89D8A4461A /* NohanaImagePicker-prefix.pch */,
-				A6ED1D32B607F7BA5386CB02D1CBF562 /* NohanaImagePicker-umbrella.h */,
-				D59F7993699511BC9D34C2BB6745279B /* ResourceBundle-NohanaImagePicker-Info.plist */,
+				5A6D85CF10CEB02535973D63333F6F86 /* ADMozaicCollectionViewLayout */,
+				3DDF9FEC3547EEF8771453A9570CCFE4 /* FMMosaicLayout */,
+				34778019FD6EF463F201FB079955C8CA /* NohanaImagePicker */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/NohanaImagePicker";
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
@@ -218,12 +289,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		1507E115706DCD01A4CA81FA912CCD27 /* Pods */ = {
+		132C96B9DDE4312536DB034DA8CE9CD1 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				2DFF8FB95E5ABCC1D0289BF43D9EB0D7 /* NohanaImagePicker */,
+				D4AC9DB35982E7D3FAD79FC3EE49A5C4 /* FMMosaicLayout.modulemap */,
+				A5D3BE06136628AD4B61DC2BDD857261 /* FMMosaicLayout.xcconfig */,
+				9E8DB34ABFCA70BAB53F3AA071AAC252 /* FMMosaicLayout-dummy.m */,
+				3715173615B4FF808305CEDEA51DFFB2 /* FMMosaicLayout-prefix.pch */,
+				DF7484C3E032DDBA8E4051EB6752CE05 /* FMMosaicLayout-umbrella.h */,
+				861908B7E7BCAC4F0BB00EF8C550B739 /* Info.plist */,
 			);
-			name = Pods;
+			name = "Support Files";
+			path = "../Target Support Files/FMMosaicLayout";
 			sourceTree = "<group>";
 		};
 		192C2E4C8B26B587809267C9AFAA73AC /* Pods-PrivateGallery */ = {
@@ -244,6 +321,20 @@
 			path = "Target Support Files/Pods-PrivateGallery";
 			sourceTree = "<group>";
 		};
+		22A27525274DE80EE87703060D647CD4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				81C855FFA9D70DF22F51309FB10D078D /* ADMozaicCollectionViewLayout.framework */,
+				EC0B25D6E5B9D5A42A5716A5D026AFD0 /* FMMosaicLayout.framework */,
+				38D8C84173D960FC29CF1BFDE83D6229 /* NohanaImagePicker.bundle */,
+				53B55E7DC77FF86810FD323D9841F5B8 /* NohanaImagePicker.framework */,
+				8D6E1A16F186E849E38A5E04BB1D81D1 /* Pods_PrivateGallery.framework */,
+				B715DE53AAAA83F9345A2BFECB66150E /* Pods_PrivateGalleryTests.framework */,
+				C0C0C514CF9D2F61C04681C3EDDE3D3A /* Pods_PrivateGalleryUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		248607021EBAF48ACB6304B59EF3233D /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -254,40 +345,84 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		2DFF8FB95E5ABCC1D0289BF43D9EB0D7 /* NohanaImagePicker */ = {
+		34778019FD6EF463F201FB079955C8CA /* NohanaImagePicker */ = {
 			isa = PBXGroup;
 			children = (
-				14A1261F40E63347BBACB9B5158358D6 /* ActivityIndicatable.swift */,
-				8FBE4CD4738E1BB5D35CE0E8D2DE08DA /* AlbumCell.swift */,
-				6D5CCB52B45F21A9A7D1B80A98BFBD59 /* AlbumListEmptyIndicator.swift */,
-				F0323076D327DE21AD3913EF7CFDE112 /* AlbumListViewController.swift */,
-				D43BEF3CD1FAD5E3292B7D02E5DF28F5 /* AnimatableNavigationController.swift */,
-				F82461EA62DE48532020319DC92C3DB8 /* AssetCell.swift */,
-				54028BB85C499AE26E7BE41FCC9B6319 /* AssetDetailCell.swift */,
-				C699F8E88877A4AB026FA498522CDCBA /* AssetDetailListViewController.swift */,
-				D8545F670EB2554A1E8AF28EDBBBE8D1 /* AssetListViewController.swift */,
-				E0B056D23F993338A51AA81D9DA058DB /* ColorConfig.swift */,
-				90828F69956CB1A56A426FC969202AA5 /* ContractingAnimationController.swift */,
-				554761E79538B40D52AB39540898481D /* EmptyIndicatable.swift */,
-				606B559BBAB76115E930CCDDA10A272C /* ExpandingAnimationController.swift */,
-				380FDB2A7ECD0994F635757F4CCC7586 /* ImageName.swift */,
-				A9CF989D9F38AB46A195296FC1E208BE /* ItemListType.swift */,
-				9D278EC40773D1B30A3E588DE6B782BF /* MomentCell.swift */,
-				0D6802AEBA673EC708BA803A3F68F284 /* MomentSectionHeaderView.swift */,
-				761D4376A198DC761774B2723AC238D6 /* MomentViewController.swift */,
-				3B42DDDB81476C60228BBAFEDB5E5228 /* NohanaImagePickerController.swift */,
-				81ECDC3F33CC55E178B086C6186C1ED3 /* NotificationInfo.swift */,
-				EABD19EFFB383C85D4B4BDF0ED298124 /* PhotoKitAlbumList.swift */,
-				930E2D70387532230AF0B13BEAD270BA /* PhotoKitAsset.swift */,
-				9846791A18F3AFE006504D2089DEBCC1 /* PhotoKitAssetList.swift */,
-				ED0F9AFA95862BE418FBD827B8B48104 /* PickedAssetList.swift */,
-				AA8A2A980E75C894A60D511DC8AF2351 /* Size.swift */,
-				AF64F5441A58769544A124131CD8E0E3 /* SwipeInteractionController.swift */,
-				D436B83AC8A96ADF7EAD2C0A0F40F82B /* Resources */,
-				0771AEF8E268F1E169104A4DE88D7FCD /* Support Files */,
+				EC74D21B531312ACBF254DB7BFD545D2 /* ActivityIndicatable.swift */,
+				87D86CB4B9C269BD5F21CC316E6AB1E5 /* AlbumCell.swift */,
+				C86B0D3FD44E849546248B95A56FFADE /* AlbumListEmptyIndicator.swift */,
+				F0693E1DBC180DDE68C1187A154A770C /* AlbumListViewController.swift */,
+				9FB3F24DF8E16ECEDE96D83544ECE9E0 /* AnimatableNavigationController.swift */,
+				4980786BD2B1779C461DFD92BA998C29 /* AssetCell.swift */,
+				6EEE4FCF73DE7C263CFE90350AB0BB58 /* AssetDetailCell.swift */,
+				860CB63357E982995A2B498F823D90A4 /* AssetDetailListViewController.swift */,
+				48500A57C87095578D01DE9D420F2D6E /* AssetListViewController.swift */,
+				2BFBE780DED7D8C7F01A37513E2755D2 /* ColorConfig.swift */,
+				218FDDA5B8D710B86E63822596842CD2 /* ContractingAnimationController.swift */,
+				468FF125C3F49A6B8EC2ACFCC7D0E11A /* EmptyIndicatable.swift */,
+				29FA375FBFB9F76C1B4BB67D996EAE70 /* ExpandingAnimationController.swift */,
+				FA4A052C6619035D226E6BC3FEB988B9 /* ImageName.swift */,
+				53B9013A31B2AE53DDA205E815DA5D57 /* ItemListType.swift */,
+				4853A8A6EDACDF2EC1E650EA9EBE4BBC /* MomentCell.swift */,
+				583CB4C6FE31201507E3305AF3A246CB /* MomentSectionHeaderView.swift */,
+				4A5F47F7A3EF7E0404C0D5F444FCB31B /* MomentViewController.swift */,
+				9DFC2A3583B21C63172D9980B4CCE3DE /* NohanaImagePickerController.swift */,
+				8AC51370AB5D82AA04C37126A83A9B3F /* NotificationInfo.swift */,
+				607D30067C2A3A359437223E8EC8F5EF /* PhotoKitAlbumList.swift */,
+				EA0C1B51699CB970D1C1781CD5886616 /* PhotoKitAsset.swift */,
+				B497108480F4393230AEB9ED23E5E91D /* PhotoKitAssetList.swift */,
+				C277C3F319D41E61FD0D8DC664A3101B /* PickedAssetList.swift */,
+				E3D8BD248EC9B999311216B0D990DFA6 /* Size.swift */,
+				FB4FB7F35D6CB7989CDF8875DA90E6CC /* SwipeInteractionController.swift */,
+				75DD01ED33F64D80A2257E79286463EF /* Resources */,
+				9357F42FAF5C29F69904D3DC4458F5FF /* Support Files */,
 			);
 			name = NohanaImagePicker;
 			path = NohanaImagePicker;
+			sourceTree = "<group>";
+		};
+		3A79425E2A3FC814D254A7A571A4F8C7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F7ABAB171D7958BC4374DEAF2FC7977A /* ADMozaicCollectionViewLayout.modulemap */,
+				76C904C050ACDEE69FD50F7A1C8B65A5 /* ADMozaicCollectionViewLayout.xcconfig */,
+				F647630BA0216D20B2150B54768FE632 /* ADMozaicCollectionViewLayout-dummy.m */,
+				7902D7D8EB2E90F2D4B6ADA4BCE01CF4 /* ADMozaicCollectionViewLayout-prefix.pch */,
+				0B16A44EEE87AC1653646DE21944EF58 /* ADMozaicCollectionViewLayout-umbrella.h */,
+				9E55B10F2E7DBF68944A0E7DBF679B12 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ADMozaicCollectionViewLayout";
+			sourceTree = "<group>";
+		};
+		3DDF9FEC3547EEF8771453A9570CCFE4 /* FMMosaicLayout */ = {
+			isa = PBXGroup;
+			children = (
+				22D47207C979A4280DC2E63E983AFF55 /* FMMosaicLayout.h */,
+				4CD4EBEA72E94AEB9DB4B3200797B2BF /* FMMosaicLayout.m */,
+				132C96B9DDE4312536DB034DA8CE9CD1 /* Support Files */,
+			);
+			name = FMMosaicLayout;
+			path = FMMosaicLayout;
+			sourceTree = "<group>";
+		};
+		5A6D85CF10CEB02535973D63333F6F86 /* ADMozaicCollectionViewLayout */ = {
+			isa = PBXGroup;
+			children = (
+				8FA98BFCFCA36AE7C0A5C506CB1C0BCD /* ADMozaikLayout.swift */,
+				E3C91CFAECAFFAE37B69CDE77D12492C /* ADMozaikLayoutAttributes.swift */,
+				A5F8549F53450B60A487B289DEA9F038 /* ADMozaikLayoutCache.swift */,
+				1C30DF64DDAF492E163F3CC5333505AC /* ADMozaikLayoutDelegate.swift */,
+				5FE353FDC3CCFB9E63870C40A6EA4FD5 /* ADMozaikLayoutSectionGeometry.swift */,
+				40BF6875874419569B34EC14B59EFDBC /* ADMozaikLayoutSectionMatrix.swift */,
+				5CE1C701549C812CA74CA9774C0B190C /* ADMozaikLayoutStructs.swift */,
+				A92AE541006CEDB1C742A895E8C14D09 /* AutoEquatable.generated.swift */,
+				CD76D2702BF0E594802E63E8F4746216 /* AutoHashable.generated.swift */,
+				F55DB055E8F8EFCEBD19AEAB10F57F00 /* PhantomProtocols.swift */,
+				3A79425E2A3FC814D254A7A571A4F8C7 /* Support Files */,
+			);
+			name = ADMozaicCollectionViewLayout;
+			path = ADMozaicCollectionViewLayout;
 			sourceTree = "<group>";
 		};
 		6AA5FE6EF8AB84EADACC38AF50563E54 /* Pods-PrivateGalleryTests */ = {
@@ -308,13 +443,24 @@
 			path = "Target Support Files/Pods-PrivateGalleryTests";
 			sourceTree = "<group>";
 		};
+		75DD01ED33F64D80A2257E79286463EF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8A6EED886E69AC0A22B234085F9531C6 /* en.lproj */,
+				310F0D6CF35E7DD6E8EA4A2C3FF1D3CD /* Images.xcassets */,
+				B84705E728C2F0B9E64908EA996A0674 /* ja.lproj */,
+				2DC1B3BE9C78330013D937D59BA2F494 /* NohanaImagePicker.storyboard */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
-				1507E115706DCD01A4CA81FA912CCD27 /* Pods */,
-				F1FC62F4C5BE0376D3B7FE9A30110426 /* Products */,
+				1020A9259D3217A09550EF0B8D235DC3 /* Pods */,
+				22A27525274DE80EE87703060D647CD4 /* Products */,
 				248607021EBAF48ACB6304B59EF3233D /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -329,15 +475,19 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		D436B83AC8A96ADF7EAD2C0A0F40F82B /* Resources */ = {
+		9357F42FAF5C29F69904D3DC4458F5FF /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				39524BC861D54A6DCAC18C0BA3D70131 /* en.lproj */,
-				4B7DC0D4DDBF0DEDB6ABF47D3B8A83BE /* Images.xcassets */,
-				6D3DF12C0E8FADC8047BF33D1E385E81 /* ja.lproj */,
-				D735EA52AFF0B2DC60282F0DC55B3438 /* NohanaImagePicker.storyboard */,
+				F6253C38B22696B0F8734CB6ECA7020E /* Info.plist */,
+				486D1184AEE85987ED619FD16EC7233E /* NohanaImagePicker.modulemap */,
+				7C8954D347E7A8929ECC63372F605679 /* NohanaImagePicker.xcconfig */,
+				2E9A89C3B28081B24BB836332D85EF87 /* NohanaImagePicker-dummy.m */,
+				F7975635AB058C289FF965B1DD08A30B /* NohanaImagePicker-prefix.pch */,
+				F9E9C1A5816BC70B9342BF7EF2D124AF /* NohanaImagePicker-umbrella.h */,
+				9ACD6C212B1BCE2D39DEAA95C8FA0141 /* ResourceBundle-NohanaImagePicker-Info.plist */,
 			);
-			name = Resources;
+			name = "Support Files";
+			path = "../Target Support Files/NohanaImagePicker";
 			sourceTree = "<group>";
 		};
 		DE9483AE141D9651C58EFAFAD1C1EF69 /* Pods-PrivateGalleryUITests */ = {
@@ -358,26 +508,31 @@
 			path = "Target Support Files/Pods-PrivateGalleryUITests";
 			sourceTree = "<group>";
 		};
-		F1FC62F4C5BE0376D3B7FE9A30110426 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				B0F2CE2D9D2182BC75B3E94AD63C5FD9 /* NohanaImagePicker.bundle */,
-				B543366DBAFFA61748310C39F17837E2 /* NohanaImagePicker.framework */,
-				57D4BF83F31D0983E7EB224C3357FD52 /* Pods_PrivateGallery.framework */,
-				85D1137CE3382720DD297AECAE76D912 /* Pods_PrivateGalleryTests.framework */,
-				F9C099A0D5E64E30CE016681A60D3D74 /* Pods_PrivateGalleryUITests.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		1012C867CF5B10E4E794373708E54A26 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1126E9816DAAA195F12F188C28B7A650 /* FMMosaicLayout-umbrella.h in Headers */,
+				A56D5E17B01205C242C3DF61F06C5617 /* FMMosaicLayout.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		34DE8C8800161CCBAFF78D43C9C7E66B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				DCB8F613FE8723E49CB367D3C3A2D8EE /* Pods-PrivateGalleryUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4DA316FE84E378F353E0FF754D05C9C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				796E90B4A6538E293E63E9BC3916407E /* Pods-PrivateGallery-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,11 +552,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FD2DA75337F31632B4A14D8529BCDEC4 /* Headers */ = {
+		EC193AFD1A8D5219457634FB2A800BC1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A16E0E0E0B081569A06669A6E215D0E4 /* Pods-PrivateGallery-umbrella.h in Headers */,
+				D3A5F76842FF26B12FF5A269337F4167 /* ADMozaicCollectionViewLayout-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,7 +577,7 @@
 			);
 			name = "NohanaImagePicker-NohanaImagePicker";
 			productName = "NohanaImagePicker-NohanaImagePicker";
-			productReference = B0F2CE2D9D2182BC75B3E94AD63C5FD9 /* NohanaImagePicker.bundle */;
+			productReference = 38D8C84173D960FC29CF1BFDE83D6229 /* NohanaImagePicker.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 		557EF6D0EC0A2C51D37F961DBB1824C0 /* NohanaImagePicker */ = {
@@ -441,7 +596,41 @@
 			);
 			name = NohanaImagePicker;
 			productName = NohanaImagePicker;
-			productReference = B543366DBAFFA61748310C39F17837E2 /* NohanaImagePicker.framework */;
+			productReference = 53B55E7DC77FF86810FD323D9841F5B8 /* NohanaImagePicker.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7814BB29C43881C657824C85B7870715 /* ADMozaicCollectionViewLayout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0A957E2290E4DCF212FFC1CF0A46923 /* Build configuration list for PBXNativeTarget "ADMozaicCollectionViewLayout" */;
+			buildPhases = (
+				072A75094DB1A65593BD5CD8549BB486 /* Sources */,
+				89E0FFD54EC9CE1330FBDD5849506D45 /* Frameworks */,
+				EC193AFD1A8D5219457634FB2A800BC1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ADMozaicCollectionViewLayout;
+			productName = ADMozaicCollectionViewLayout;
+			productReference = 81C855FFA9D70DF22F51309FB10D078D /* ADMozaicCollectionViewLayout.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		84CACE4181AEB862C66D1066D7B32746 /* FMMosaicLayout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0403BCC77F58F1701C0F1FFB009F4195 /* Build configuration list for PBXNativeTarget "FMMosaicLayout" */;
+			buildPhases = (
+				7D15C7097B91B082780F263D948B1D75 /* Sources */,
+				445E74570470855983DB964589AE78FB /* Frameworks */,
+				1012C867CF5B10E4E794373708E54A26 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FMMosaicLayout;
+			productName = FMMosaicLayout;
+			productReference = EC0B25D6E5B9D5A42A5716A5D026AFD0 /* FMMosaicLayout.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		9939494A0104CD30B9939EA782E65C0C /* Pods-PrivateGalleryTests */ = {
@@ -458,7 +647,7 @@
 			);
 			name = "Pods-PrivateGalleryTests";
 			productName = "Pods-PrivateGalleryTests";
-			productReference = 85D1137CE3382720DD297AECAE76D912 /* Pods_PrivateGalleryTests.framework */;
+			productReference = B715DE53AAAA83F9345A2BFECB66150E /* Pods_PrivateGalleryTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		DF2B15FEF1AB5F3684FAB6A67D362B81 /* Pods-PrivateGalleryUITests */ = {
@@ -475,25 +664,27 @@
 			);
 			name = "Pods-PrivateGalleryUITests";
 			productName = "Pods-PrivateGalleryUITests";
-			productReference = F9C099A0D5E64E30CE016681A60D3D74 /* Pods_PrivateGalleryUITests.framework */;
+			productReference = C0C0C514CF9D2F61C04681C3EDDE3D3A /* Pods_PrivateGalleryUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		E3E3BD6E108CF4E48AF7DF100F24ED84 /* Pods-PrivateGallery */ = {
+		F4851F213AA79708C5CB7BC069D33345 /* Pods-PrivateGallery */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2A1123C6CDF8F73821817034B87768BC /* Build configuration list for PBXNativeTarget "Pods-PrivateGallery" */;
+			buildConfigurationList = 9E86C5A44863EC1B2FB0961FB4650DFC /* Build configuration list for PBXNativeTarget "Pods-PrivateGallery" */;
 			buildPhases = (
-				4A5E4A338476180B6D483D558A50D20C /* Sources */,
-				76E67F7FDEBC5571B145687197014E28 /* Frameworks */,
-				FD2DA75337F31632B4A14D8529BCDEC4 /* Headers */,
+				90DC2FCEDE35850CD3BBF23BA25ED9CF /* Sources */,
+				07E7DAD1B0004AAD2265C6316D517516 /* Frameworks */,
+				B4DA316FE84E378F353E0FF754D05C9C /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				BB64551B22FCF62227BCED1A632870DB /* PBXTargetDependency */,
+				88C07BBD8F6B9F0A9C63D713F5BE8B6C /* PBXTargetDependency */,
+				69B97AED736C051C1E367CD3BB638E7B /* PBXTargetDependency */,
+				F20244ECBD194C4884BB802427C8744A /* PBXTargetDependency */,
 			);
 			name = "Pods-PrivateGallery";
 			productName = "Pods-PrivateGallery";
-			productReference = 57D4BF83F31D0983E7EB224C3357FD52 /* Pods_PrivateGallery.framework */;
+			productReference = 8D6E1A16F186E849E38A5E04BB1D81D1 /* Pods_PrivateGallery.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -513,13 +704,15 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = F1FC62F4C5BE0376D3B7FE9A30110426 /* Products */;
+			productRefGroup = 22A27525274DE80EE87703060D647CD4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				7814BB29C43881C657824C85B7870715 /* ADMozaicCollectionViewLayout */,
+				84CACE4181AEB862C66D1066D7B32746 /* FMMosaicLayout */,
 				557EF6D0EC0A2C51D37F961DBB1824C0 /* NohanaImagePicker */,
 				1CA3A09DC5C73A7CF7E166CA61C30139 /* NohanaImagePicker-NohanaImagePicker */,
-				E3E3BD6E108CF4E48AF7DF100F24ED84 /* Pods-PrivateGallery */,
+				F4851F213AA79708C5CB7BC069D33345 /* Pods-PrivateGallery */,
 				9939494A0104CD30B9939EA782E65C0C /* Pods-PrivateGalleryTests */,
 				DF2B15FEF1AB5F3684FAB6A67D362B81 /* Pods-PrivateGalleryUITests */,
 			);
@@ -549,11 +742,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4A5E4A338476180B6D483D558A50D20C /* Sources */ = {
+		072A75094DB1A65593BD5CD8549BB486 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6D5A4C69AF3BFA03499ED1166492724 /* Pods-PrivateGallery-dummy.m in Sources */,
+				E7D8EDFAF1605931B0B20017B718E006 /* ADMozaicCollectionViewLayout-dummy.m in Sources */,
+				B3985E1601B83B18E354031CA6A29A3A /* ADMozaikLayout.swift in Sources */,
+				BAF079D6E74741F61933CCF57C0D8ADD /* ADMozaikLayoutAttributes.swift in Sources */,
+				55E2D04F32F10C4A6612549EC9F36DA8 /* ADMozaikLayoutCache.swift in Sources */,
+				B1F79A7AB3539B8EBC9137873977C529 /* ADMozaikLayoutDelegate.swift in Sources */,
+				FD44701E90E3CA4BBE6536F5E7EDB040 /* ADMozaikLayoutSectionGeometry.swift in Sources */,
+				FC5A9DD228CA8B6430B3C22758F551D6 /* ADMozaikLayoutSectionMatrix.swift in Sources */,
+				E5369749BCC13E447BD94F3E1EFFC567 /* ADMozaikLayoutStructs.swift in Sources */,
+				105BD9FC3BD7A7FC1A86EBEF4468CB25 /* AutoEquatable.generated.swift in Sources */,
+				49E9A45821B6DA7CA46EE38DEC935199 /* AutoHashable.generated.swift in Sources */,
+				F8DB51FF8D553F3AD28098757AC2EA2A /* PhantomProtocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -562,6 +765,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC67937DDEE44FF723777D3E7CD2867A /* Pods-PrivateGalleryTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D15C7097B91B082780F263D948B1D75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0E1426C916F6AF2F5BD2746461C0CDC /* FMMosaicLayout-dummy.m in Sources */,
+				D62DE57378002B3DF43AD16AAFE120E2 /* FMMosaicLayout.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90DC2FCEDE35850CD3BBF23BA25ED9CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49CCD0AC27597B4FE7402C7A43FB0114 /* Pods-PrivateGallery-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -623,11 +843,23 @@
 			target = 1CA3A09DC5C73A7CF7E166CA61C30139 /* NohanaImagePicker-NohanaImagePicker */;
 			targetProxy = 8899865B63D5EFD6518961AB20BBE059 /* PBXContainerItemProxy */;
 		};
-		BB64551B22FCF62227BCED1A632870DB /* PBXTargetDependency */ = {
+		69B97AED736C051C1E367CD3BB638E7B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FMMosaicLayout;
+			target = 84CACE4181AEB862C66D1066D7B32746 /* FMMosaicLayout */;
+			targetProxy = D0EC435004FF21A007FF5EA20231FDE1 /* PBXContainerItemProxy */;
+		};
+		88C07BBD8F6B9F0A9C63D713F5BE8B6C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ADMozaicCollectionViewLayout;
+			target = 7814BB29C43881C657824C85B7870715 /* ADMozaicCollectionViewLayout */;
+			targetProxy = 9303EB63ECF2C1ECE6B7E4F51C7FA53D /* PBXContainerItemProxy */;
+		};
+		F20244ECBD194C4884BB802427C8744A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = NohanaImagePicker;
 			target = 557EF6D0EC0A2C51D37F961DBB1824C0 /* NohanaImagePicker */;
-			targetProxy = 3D58177D4040259F9EF32580367CCF5B /* PBXContainerItemProxy */;
+			targetProxy = 4BFCC72E12A1DA29793944BC576DC20D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -674,7 +906,7 @@
 		};
 		25A7C4EB3EB2703865B6B481091EB088 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CC9301B93D24707DD29042F6CEC0843C /* NohanaImagePicker.xcconfig */;
+			baseConfigurationReference = 7C8954D347E7A8929ECC63372F605679 /* NohanaImagePicker.xcconfig */;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/NohanaImagePicker";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -691,7 +923,7 @@
 		};
 		3FE8FAD0E50A7D6ADCA8C852FAB42499 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CC9301B93D24707DD29042F6CEC0843C /* NohanaImagePicker.xcconfig */;
+			baseConfigurationReference = 7C8954D347E7A8929ECC63372F605679 /* NohanaImagePicker.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -722,9 +954,77 @@
 			};
 			name = Debug;
 		};
+		490FE16B9E436CE046862E77CDE426F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAE8586AAB505F40983ECD88C3188472 /* Pods-PrivateGallery.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PrivateGallery/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PrivateGallery/Pods-PrivateGallery.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PrivateGallery;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4B2B0253436F6F7A944F31D3DA051C9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5D3BE06136628AD4B61DC2BDD857261 /* FMMosaicLayout.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FMMosaicLayout/FMMosaicLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FMMosaicLayout/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FMMosaicLayout/FMMosaicLayout.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = FMMosaicLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		530C0152B4F7E00A34F46B3D171F9C59 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CC9301B93D24707DD29042F6CEC0843C /* NohanaImagePicker.xcconfig */;
+			baseConfigurationReference = 7C8954D347E7A8929ECC63372F605679 /* NohanaImagePicker.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -789,9 +1089,44 @@
 			};
 			name = Release;
 		};
+		86F60BBA897F1DEC71859DBC5CBC5CDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D74FE12D953E6E51884DA1371055467 /* Pods-PrivateGallery.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PrivateGallery/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PrivateGallery/Pods-PrivateGallery.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PrivateGallery;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		A2B9AB197D746DA42C217C9FD731FF3F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CC9301B93D24707DD29042F6CEC0843C /* NohanaImagePicker.xcconfig */;
+			baseConfigurationReference = 7C8954D347E7A8929ECC63372F605679 /* NohanaImagePicker.xcconfig */;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/NohanaImagePicker";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -806,41 +1141,69 @@
 			};
 			name = Debug;
 		};
-		ACFA2590A461F96BBB618820159E88E5 /* Debug */ = {
+		A5485E530AEDFBF8E0D1D05D0BFB828C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AAE8586AAB505F40983ECD88C3188472 /* Pods-PrivateGallery.debug.xcconfig */;
+			baseConfigurationReference = 76C904C050ACDEE69FD50F7A1C8B65A5 /* ADMozaicCollectionViewLayout.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-PrivateGallery/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/ADMozaicCollectionViewLayout/ADMozaicCollectionViewLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ADMozaicCollectionViewLayout/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PrivateGallery/Pods-PrivateGallery.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_PrivateGallery;
+				MODULEMAP_FILE = "Target Support Files/ADMozaicCollectionViewLayout/ADMozaicCollectionViewLayout.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = ADMozaicCollectionViewLayout;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
+		};
+		A990547E71DC7344A9EAF1E52E7D673D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5D3BE06136628AD4B61DC2BDD857261 /* FMMosaicLayout.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FMMosaicLayout/FMMosaicLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FMMosaicLayout/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FMMosaicLayout/FMMosaicLayout.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = FMMosaicLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		B268FF8A6CDE0D9C2055313891F1E5AB /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -956,6 +1319,39 @@
 			};
 			name = Debug;
 		};
+		DF2B7F6B4928F50B3ADCC0A139788C5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76C904C050ACDEE69FD50F7A1C8B65A5 /* ADMozaicCollectionViewLayout.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ADMozaicCollectionViewLayout/ADMozaicCollectionViewLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ADMozaicCollectionViewLayout/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ADMozaicCollectionViewLayout/ADMozaicCollectionViewLayout.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = ADMozaicCollectionViewLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		E0A3B0B4EB7683ADF8ADE37BCCEDC3B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 46B8D3547A070F50DE930DF723308639 /* Pods-PrivateGalleryUITests.debug.xcconfig */;
@@ -991,49 +1387,14 @@
 			};
 			name = Debug;
 		};
-		FB6AB3A4EA5EA682FFD477A3674EDD97 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5D74FE12D953E6E51884DA1371055467 /* Pods-PrivateGallery.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-PrivateGallery/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PrivateGallery/Pods-PrivateGallery.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_PrivateGallery;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2A1123C6CDF8F73821817034B87768BC /* Build configuration list for PBXNativeTarget "Pods-PrivateGallery" */ = {
+		0403BCC77F58F1701C0F1FFB009F4195 /* Build configuration list for PBXNativeTarget "FMMosaicLayout" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				ACFA2590A461F96BBB618820159E88E5 /* Debug */,
-				FB6AB3A4EA5EA682FFD477A3674EDD97 /* Release */,
+				4B2B0253436F6F7A944F31D3DA051C9D /* Debug */,
+				A990547E71DC7344A9EAF1E52E7D673D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1079,6 +1440,24 @@
 			buildConfigurations = (
 				E0A3B0B4EB7683ADF8ADE37BCCEDC3B8 /* Debug */,
 				B268FF8A6CDE0D9C2055313891F1E5AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E86C5A44863EC1B2FB0961FB4650DFC /* Build configuration list for PBXNativeTarget "Pods-PrivateGallery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				490FE16B9E436CE046862E77CDE426F7 /* Debug */,
+				86F60BBA897F1DEC71859DBC5CBC5CDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0A957E2290E4DCF212FFC1CF0A46923 /* Build configuration list for PBXNativeTarget "ADMozaicCollectionViewLayout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF2B7F6B4928F50B3ADCC0A139788C5F /* Debug */,
+				A5485E530AEDFBF8E0D1D05D0BFB828C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
