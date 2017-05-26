@@ -8,7 +8,6 @@
 import UIKit
 import Photos
 import NohanaImagePicker
-import FMMosaicLayout
 import ADMozaicCollectionViewLayout
 
 private let reuseIdentifier = "Cell"
@@ -22,6 +21,7 @@ class MainCollectionViewController: UICollectionViewController, NohanaImagePicke
     var selectionMode = false
     var boolSelection = [Bool] ()
     var assetArray = [PHAsset] ()
+    var hiddenAssetArray = [PHAsset] ()
     
     @IBOutlet var longPressRecog: UILongPressGestureRecognizer!
 
@@ -30,10 +30,11 @@ class MainCollectionViewController: UICollectionViewController, NohanaImagePicke
         super.viewDidLoad()
         title = "Private Gallery"
 
-        
-        createDirectory()
-        getImage() //Modificar para que lea a traves de PHAssets
-        
+        getAssets()
+        print("View did load" , assetArray)
+//        createDirectory()
+//        getImage() //Modificar para que lea a traves de PHAssets
+//        
         let layout = ADMozaikLayout(delegate: self)
         self.collectionView?.collectionViewLayout = layout
 
@@ -63,7 +64,7 @@ class MainCollectionViewController: UICollectionViewController, NohanaImagePicke
         picker.delegate = self
         picker.numberOfColumnsInPortrait = 3
         picker.toolbarHidden = true
-        picker.maximumNumberOfSelection = 50
+        picker.maximumNumberOfSelection = 0
         picker.shouldShowMoment = false
         present(picker, animated: true)
     }
@@ -75,11 +76,11 @@ class MainCollectionViewController: UICollectionViewController, NohanaImagePicke
 
     func nohanaImagePicker(_ picker: NohanaImagePickerController, didFinishPickingPhotoKitAssets pickedAssts: [PHAsset]) {
         
-        //Primero las guardo en otro directorio y despues las añado al array
-        
         for i in 0...pickedAssts.count - 1 {
-            if(assetArray.contains(pickedAssts[i]))
-            {
+        
+            hideImages(image: pickedAssts[i])
+            
+            if(assetArray.contains(pickedAssts[i])) {
                 continue
             } else {
                 assetArray.append(pickedAssts[i])
@@ -87,93 +88,177 @@ class MainCollectionViewController: UICollectionViewController, NohanaImagePicke
             }
         }
         
-        print(boolSelection)
-        print(assetArray)
         
         self.collectionView?.reloadData()
         picker.dismiss(animated: true, completion: nil)
+        
     }
-
+    
+    func getAssets() -> Void { //TODO hacer de manera asyncrona
+        
+        let allPhotosOption = PHFetchOptions()
+        allPhotosOption.includeHiddenAssets = true
+        
+        let allPhotosResult: PHFetchResult = PHAsset.fetchAssets(with: .image, options: allPhotosOption)
+    
+        allPhotosResult.enumerateObjects({ (asset, index, stop) in
+            if asset.isHidden {
+                self.hiddenAssetArray.append(asset)
+            }
+        })
+        
+        assetArray = hiddenAssetArray
+        
+    }
+    
+    
     @IBAction func addPhoto(_ sender: Any) {
         importarImagen()
     }
     
+    func hideImages(image: PHAsset) -> Void {
+        PHPhotoLibrary.shared().performChanges({
+            PHAssetChangeRequest.init(for: image).isHidden = true
+            
+        }, completionHandler: { (success, error) in
+            if !success { NSLog("error creating asset: \(String(describing: error))") }
+        })
+    }
+    
+    func unhideImages(image: PHAsset, index: Int, indexPath: IndexPath) -> Void {
+        PHPhotoLibrary.shared().performChanges({
+            PHAssetChangeRequest.init(for: image).isHidden = false
+            
+        }, completionHandler: { (success, error) in
+            if !success { NSLog("error creating asset: \(String(describing: error))") }
+        })
+        
+        assetArray.remove(at: index)
+        print("Remove: ", assetArray)
 
-    
-    
-    func saveImageDocumentDirectory(){
-        let fileManager = NSFileManager.defaultManager()
-        let paths = (NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as NSString).stringByAppendingPathComponent("apple.jpg")
-        let image = UIImage(named: "apple.jpg")
-        print(paths)
-        let imageData = UIImageJPEGRepresentation(image!, 0.5)
-        fileManager.createFileAtPath(paths as String, contents: imageData, attributes: nil)
+        self.collectionView?.deleteItems(at: [indexPath])
+        self.collectionView?.reloadData()
+        
+    }
+
+    func getImageAsset(asset: PHAsset) -> UIImage {
+        
+        let size = CGSize(width: asset.pixelWidth, height: asset.pixelHeight)
+        let options = PHImageRequestOptions()
+        options.isSynchronous = true
+        options.version = .current
+        options.deliveryMode = PHImageRequestOptionsDeliveryMode.highQualityFormat
+        options.resizeMode = .exact
+        
+        var image = UIImage()
+        PHImageManager.default().requestImage(for: asset, targetSize: size, contentMode: .aspectFit, options: options, resultHandler: { (result, _: [AnyHashable : Any]?) -> Void in
+            image = result!
+        })
+        return image
     }
     
-    func getDirectoryPath() -> String {
-        let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
-        let documentsDirectory = paths[0]
-        return documentsDirectory
-    }
-    
-    
-    func getImage(){
-        let fileManager = NSFileManager.defaultManager()
-        let imagePAth = (self.getDirectoryPath() as NSString).stringByAppendingPathComponent("apple.jpg")
-        if fileManager.fileExistsAtPath(imagePAth){
-            self.imageView.image = UIImage(contentsOfFile: imagePAth)
-        } else {
-            print("No Image")
-        }
-    }
-    
-    func createDirectory(){
-        let fileManager = NSFileManager.defaultManager()
-        let paths = (NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as NSString).stringByAppendingPathComponent("privateGalleryDirectory")
-        if !fileManager.fileExistsAtPath(paths) {
-            try! fileManager.createDirectoryAtPath(paths, withIntermediateDirectories: true, attributes: nil)
-        } else {
-            print("Already directory created.")
-        }
-    }
-    
-    
-    func deleteDirectory(){
-        let fileManager = NSFileManager.defaultManager()
-        let paths = (NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as NSString).stringByAppendingPathComponent("privateGalleryDirectory")
-        if fileManager.fileExistsAtPath(paths){
-            try! fileManager.removeItemAtPath(paths)
-        } else {
-            print("Something wrong.")
-        }
-    }
-    
-//    @IBAction func longPressAction(_ sender: UILongPressGestureRecognizer) {
-//        if sender.state == .began {
-//            selectionMode = true
+//    func saveImageDocumentDirectory(assets: [PHAsset]){
+//        let fileManager = FileManager.default
+//        
+//        for asset in assets {
 //            
-//            
-//            let pressureRecog = longPressRecog.location(in: self.collectionView)
-//            if let indexPath : NSIndexPath = (self.collectionView?.indexPathForItem(at: pressureRecog))! as NSIndexPath?{
-//                
-//                
-//                let cell = collectionView?.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath as IndexPath) as! CellCollectionViewCell
+//            var resources = PHAssetResource.assetResources(for: asset)
+//            print("Resources: " , resources[0].originalFilename)
+//            let paths = (NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as NSString).appendingPathComponent(resources[0].originalFilename)
 //
-//                //do whatever you need to do
-//                // ############################################
-//                print(indexPath)
-//                print(indexPath.row)
-//               
-//                
-//                //longPressDone = false
-//                //imageIndexInLongPress = indexPath.row
-//                //performSegue(withIdentifier: "showImage", sender: self)
-//            }
-//            // ############################################
-//            print("LongTapEnded")
+//            let image = getImageAsset(asset: asset)
+//            let imageData = UIImageJPEGRepresentation(image, 0.5)
+//            fileManager.createFile(atPath: paths as String, contents: imageData, attributes: nil)
+//         
+//            print(paths)
 //        }
 //    }
 //    
+//    func getDirectoryPath() -> String {
+//        let paths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
+//        let documentsDirectory = paths[0]
+//        return documentsDirectory
+//    }
+//    
+//    
+//    func getImage(){ //TODO Añadir mas extensiones
+//        
+//        // Get the document directory url
+//        let documentsUrl =  FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+//        var jpgFilesNames = [String] ()
+//        do {
+//            // Get the directory contents urls (including subfolders urls)
+//            let directoryContents = try FileManager.default.contentsOfDirectory(at: documentsUrl, includingPropertiesForKeys: nil, options: [])
+//            
+//            let jpgFiles = directoryContents.filter{ $0.pathExtension == "JPG" }
+//            jpgFilesNames = jpgFiles.map{ $0.lastPathComponent }
+//            print("JPG list:", jpgFilesNames)
+//            
+//        } catch let error as NSError {
+//            print(error.localizedDescription)
+//        }
+//        
+//
+//        let fileManager = FileManager.default
+//        for fileName in jpgFilesNames {
+//            
+//            let imagePAth = (self.getDirectoryPath() as NSString).appendingPathComponent(fileName)
+//        
+//            if fileManager.fileExists(atPath: imagePAth){
+//                print(imagePAth)
+//              //  self.imageView.image = UIImage(contentsOfFile: imagePAth)
+//            } else {
+//                print("No Image")
+//            }
+//        }
+//    }
+//    
+//    func createDirectory(){
+//        let fileManager = FileManager.default
+//        let paths = (NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as NSString).appendingPathComponent("privateGalleryDirectory")
+//        if !fileManager.fileExists(atPath: paths) {
+//            try! fileManager.createDirectory(atPath: paths, withIntermediateDirectories: true, attributes: nil)
+//        } else {
+//            print("Already directory created.")
+//        }
+//    }
+//    
+//    
+//    func deleteDirectory(){
+//        let fileManager = FileManager.default
+//        let paths = (NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as NSString).appendingPathComponent("privateGalleryDirectory")
+//        if fileManager.fileExists(atPath: paths){
+//            try! fileManager.removeItem(atPath: paths)
+//        } else {
+//            print("Something wrong.")
+//        }
+//    }
+    
+    @IBAction func longPressAction(_ sender: UILongPressGestureRecognizer) {
+        if sender.state == .began {
+            selectionMode = true
+            
+            
+            let pressureRecog = longPressRecog.location(in: self.collectionView)
+            if let indexPath : NSIndexPath = (self.collectionView?.indexPathForItem(at: pressureRecog))! as NSIndexPath?{
+                _ = collectionView?.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath as IndexPath) as! CellCollectionViewCell
+
+                //do whatever you need to do
+                // ############################################
+                print(indexPath)
+                print(indexPath.row)
+                unhideImages(image: assetArray[indexPath.row], index: indexPath.row, indexPath: indexPath as IndexPath)
+               
+                
+                //longPressDone = false
+                //imageIndexInLongPress = indexPath.row
+                //performSegue(withIdentifier: "showImage", sender: self)
+            }
+            // ############################################
+            print("LongTapEnded")
+        }
+    }
+    
 
     
 
@@ -243,18 +328,7 @@ class MainCollectionViewController: UICollectionViewController, NohanaImagePicke
         return cell
     }
     
-    func getImageAsset(asset: PHAsset, size: CGSize) -> Void {
-        
-        let options = PHImageRequestOptions()
-        options.isSynchronous = true
-        options.version = .current
-        options.deliveryMode = PHImageRequestOptionsDeliveryMode.highQualityFormat
-        options.resizeMode = .exact
-        
-        PHImageManager.default().requestImage(for: asset, targetSize: size, contentMode: .aspectFit, options: options, resultHandler: { (result, _: [AnyHashable : Any]?) -> Void in
-            self.imageDetail.image = result
-        })
-    }
+
     
     
     /// Method should return `ADMozaikLayoutSectionGeometryInfo` to describe specific section's geometry
@@ -373,7 +447,7 @@ class MainCollectionViewController: UICollectionViewController, NohanaImagePicke
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if !selectionMode {
+        //if !selectionMode {
             if segue.identifier == "toDetailView" {
                 if let indexPaths = collectionView?.indexPathsForSelectedItems {
                     let destinationController = segue.destination as! DetailViewController
@@ -381,7 +455,7 @@ class MainCollectionViewController: UICollectionViewController, NohanaImagePicke
                     collectionView?.deselectItem(at: indexPaths[0], animated: true)
                 }
             }
-        }
+        //}
     }
     /*
      ////////////////////////////////////
