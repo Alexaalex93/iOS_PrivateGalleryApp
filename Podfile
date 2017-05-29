@@ -6,7 +6,7 @@ target 'PrivateGallery' do
   use_frameworks!
 	pod "NohanaImagePicker"
 	pod 'ADMozaicCollectionViewLayout', '~> 4.0'
-
+	pod "DKCircleButton"
   # Pods for PrivateGallery
   target 'PrivateGalleryTests' do
     inherit! :search_paths

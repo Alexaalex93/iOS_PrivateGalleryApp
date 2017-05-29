@@ -1,15 +1,18 @@
 PODS:
   - ADMozaicCollectionViewLayout (4.0.1)
+  - DKCircleButton (1.1)
   - NohanaImagePicker (0.7.1)
 
 DEPENDENCIES:
   - ADMozaicCollectionViewLayout (~> 4.0)
+  - DKCircleButton
   - NohanaImagePicker
 
 SPEC CHECKSUMS:
   ADMozaicCollectionViewLayout: 77627ecbcb9a385e9027cdaf387d03f3dafe7787
+  DKCircleButton: 62564c9debae08ad77dabb8d9658dfeb5520f2c4
   NohanaImagePicker: ae909c23150c30e29ab2c5d48766c39eef21d790
 
-PODFILE CHECKSUM: 91a4b5a4c170d6d64d7c9968ce601caa4bea08d2
+PODFILE CHECKSUM: c7eeb4fb31fdeef0651c9bb325cde363a8619a27
 
 COCOAPODS: 1.2.0
