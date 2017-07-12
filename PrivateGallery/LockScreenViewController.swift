@@ -8,6 +8,8 @@
 
 import UIKit
 import DKCircleButton
+import LocalAuthentication
+
 
 class LockScreenViewController: UIViewController {
 
@@ -17,8 +19,10 @@ class LockScreenViewController: UIViewController {
     var xc = 100
     var yc = 100
     var arrayNums = [Int]()
+    let defaults = UserDefaults.standard
     var pass = ""
     var passdefs = String()
+    var usedBefore = false
     var shapeLayer1 = CAShapeLayer()
     var shapeLayer2 = CAShapeLayer()
     var shapeLayer3 = CAShapeLayer()
@@ -28,14 +32,28 @@ class LockScreenViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let defaults = UserDefaults.standard
-        defaults.set("1234", forKey: "password")
-        passdefs = defaults.object(forKey: "password") as? String ?? String()
-        
+        checkDefs()
         randomNums()
         drawCircles()
         generateCGRects()
         generateButtons()
+    }
+    
+    func checkDefs() -> Void {
+        
+        passdefs = defaults.object(forKey: "password") as? String ?? String()
+        print(passdefs)
+        usedBefore = defaults.object(forKey: "usedBefore") as? Bool ?? Bool()
+        print(usedBefore)
+        
+        if !usedBefore {
+            let label = UILabel.init(frame: CGRect(x: 0, y: 60, width: 375, height: 100))
+            label.center = CGPoint(x: 187.5, y: 60)
+            label.text = "Establezca un código de desbloqueo"
+            label.textAlignment = .center
+            label.textColor = UIColor.black
+            self.view.addSubview(label)
+        }
     }
     
     func randomNums() -> Void {
@@ -46,6 +64,13 @@ class LockScreenViewController: UIViewController {
             }
             arrayNums.append(num)
         } while (arrayNums.count != 10)
+        
+        if !usedBefore {
+            arrayNums.removeAll(keepingCapacity: true)
+            for i in 0...arrayNums.capacity - 1 {
+                arrayNums.append(i)
+            }
+        }
     }
     
     func drawCircles() -> Void {
@@ -54,7 +79,7 @@ class LockScreenViewController: UIViewController {
                 circlePath = UIBezierPath(arcCenter: CGPoint(x: xc,y: yc), radius: CGFloat(5), startAngle: CGFloat(0), endAngle:CGFloat(Double.pi * 2), clockwise: true)
                 shapeLayer1.path = circlePath.cgPath
                 shapeLayer1.fillColor = UIColor.clear.cgColor
-                shapeLayer1.strokeColor = UIColor.red.cgColor
+                shapeLayer1.strokeColor = UIColor(red: 119.0/255.0, green: 61.0/255.0, blue: 144.0/255.0, alpha: 1.0).cgColor
                 shapeLayer1.lineWidth = 3.0
                 shapeLayer1.isHidden = true
                 view.layer.addSublayer(shapeLayer1)
@@ -64,7 +89,7 @@ class LockScreenViewController: UIViewController {
                 circlePath = UIBezierPath(arcCenter: CGPoint(x: xc,y: yc), radius: CGFloat(5), startAngle: CGFloat(0), endAngle:CGFloat(Double.pi * 2), clockwise: true)
                 shapeLayer2.path = circlePath.cgPath
                 shapeLayer2.fillColor = UIColor.clear.cgColor
-                shapeLayer2.strokeColor = UIColor.red.cgColor
+                shapeLayer2.strokeColor = UIColor(red: 119.0/255.0, green: 61.0/255.0, blue: 144.0/255.0, alpha: 1.0).cgColor
                 shapeLayer2.lineWidth = 3.0
                 shapeLayer2.isHidden = true
                 view.layer.addSublayer(shapeLayer2)
@@ -74,7 +99,7 @@ class LockScreenViewController: UIViewController {
                 circlePath = UIBezierPath(arcCenter: CGPoint(x: xc,y: yc), radius: CGFloat(5), startAngle: CGFloat(0), endAngle:CGFloat(Double.pi * 2), clockwise: true)
                 shapeLayer3.path = circlePath.cgPath
                 shapeLayer3.fillColor = UIColor.clear.cgColor
-                shapeLayer3.strokeColor = UIColor.red.cgColor
+                shapeLayer3.strokeColor = UIColor(red: 119.0/255.0, green: 61.0/255.0, blue: 144.0/255.0, alpha: 1.0).cgColor
                 shapeLayer3.lineWidth = 3.0
                 shapeLayer3.isHidden = true
                 view.layer.addSublayer(shapeLayer3)
@@ -84,7 +109,7 @@ class LockScreenViewController: UIViewController {
                 circlePath = UIBezierPath(arcCenter: CGPoint(x: xc,y: yc), radius: CGFloat(5), startAngle: CGFloat(0), endAngle:CGFloat(Double.pi * 2), clockwise: true)
                 shapeLayer4.path = circlePath.cgPath
                 shapeLayer4.fillColor = UIColor.clear.cgColor
-                shapeLayer4.strokeColor = UIColor.red.cgColor
+                shapeLayer4.strokeColor = UIColor(red: 119.0/255.0, green: 61.0/255.0, blue: 144.0/255.0, alpha: 1.0).cgColor
                 shapeLayer4.lineWidth = 3.0
                 shapeLayer4.isHidden = true
                 view.layer.addSublayer(shapeLayer4)
@@ -112,15 +137,27 @@ class LockScreenViewController: UIViewController {
             shapeLayer3.isHidden = false
         } else if(pass.characters.count == 4){
             shapeLayer4.isHidden = false
-
         }
-        if pass.characters.count == 4 && pass == passdefs {
-            print("Result OK")
-            shapeLayer1.isHidden = true
-            shapeLayer2.isHidden = true
-            shapeLayer3.isHidden = true
-            shapeLayer4.isHidden = true
-        } else if pass.characters.count == 4 && pass != passdefs {
+
+        if !usedBefore && pass.characters.count == 4{
+            usedBefore = true
+            
+            defaults.set(true, forKey: "usedBefore")
+            defaults.set(pass, forKey: "password")
+            OperationQueue.main.addOperation {
+                self.performSegue(withIdentifier: "showHomeScreen", sender: nil)
+            }
+
+        
+        }
+        
+        if pass.characters.count == 4 && pass == passdefs && usedBefore{
+            OperationQueue.main.addOperation {
+                self.performSegue(withIdentifier: "showHomeScreen", sender: nil)
+            }
+
+
+        } else if pass.characters.count == 4 && pass != passdefs && usedBefore {
             pass = ""
 
         }
@@ -147,6 +184,7 @@ class LockScreenViewController: UIViewController {
     
     func generateButtons() -> Void {
         
+
         let button1 = DKCircleButton.init(frame: cgRectArray[arrayNums[0]])
         
         
@@ -247,18 +285,68 @@ class LockScreenViewController: UIViewController {
         button0.addTarget(self, action: #selector(thumbsUpButtonPressed), for: .touchUpInside)
         view.addSubview(button0)
 
-        let fingerprintButton = DKCircleButton.init(frame: CGRect(x: 250, y: 542, width: 75, height: 75))
+        let fingerprintButton = DKCircleButton.init(frame: CGRect(x: 250, y: 552, width: 75, height: 75))
         
         fingerprintButton.imageView?.contentMode = .scaleAspectFit
         fingerprintButton.setImage(UIImage(named: "fingerprint"), for: .normal)
         fingerprintButton.setTitleColor(UIColor.black, for: .normal)
         fingerprintButton.borderColor = UIColor.black
-        fingerprintButton.addTarget(self, action: #selector(thumbsUpButtonPressed), for: .touchUpInside)
+        fingerprintButton.addTarget(self, action: #selector(authenticateWithTouchID), for: .touchUpInside)
         view.addSubview(fingerprintButton)
 
-       
-
     }
+    
+    func authenticateWithTouchID(){
+        //Authentication COntext
+        let localAuthContext = LAContext()
+        let razon = "Accede con TouchID a tu perfil"
+        var authError: NSError?
+        
+        if !localAuthContext.canEvaluatePolicy(LAPolicy.deviceOwnerAuthenticationWithBiometrics, error: &authError){
+            if let error = authError {
+                print(error.localizedDescription)
+            }
+            return
+        }
+        //Identificar al usuario con TouchID
+        localAuthContext.evaluatePolicy(LAPolicy.deviceOwnerAuthenticationWithBiometrics, localizedReason: razon) { (success, error) in
+            //Fallo al identificar
+            if !success{
+                if let error = error {
+                    switch error {
+                    case LAError.authenticationFailed:
+                        print("Authentication failed")
+                    case LAError.passcodeNotSet:
+                        print("Passcode not set")
+                    case LAError.systemCancel:
+                        print("Authentication canceled by system")
+                    case LAError.userCancel:
+                        print("Authentication canceled by user")
+                    case LAError.touchIDNotEnrolled:
+                        print("No hay info biométrica disponible")
+                    case LAError.touchIDNotAvailable:
+                        print("TouchID no disponible")
+                    case LAError.userFallback:
+                        print("Usuario prefiere usar contraseña")
+                    default:
+                        print(error.localizedDescription)
+                    }
+                }
+                // if!success lo hace en el backgroundThread y como esta en un hilo y queremos hacer cambios en la interfaz tenemos que salir al hilo principal con el operationQueue
+                //Ir hacia atrás al Login
+//                OperationQueue.main.addOperation {
+//                    self.showLoginDialog()
+//                }
+            } else {
+                //Ha funcionado
+                print("Autenticacion ha funcionado")
+                OperationQueue.main.addOperation {
+                    self.performSegue(withIdentifier: "showHomeScreen", sender: nil)
+                }
+            }
+        }
+    }
+
     
     
     override func didReceiveMemoryWarning() {

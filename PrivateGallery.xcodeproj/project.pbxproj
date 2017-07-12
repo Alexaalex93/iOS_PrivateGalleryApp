@@ -11,11 +11,9 @@
 		C95F074B73ED97A45E9AC2B6 /* Pods_PrivateGalleryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92B101EC662CE2BB0D7B432B /* Pods_PrivateGalleryTests.framework */; };
 		CAA681E8B7EBC978CA44CDFB /* Pods_PrivateGallery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DDA423C9398A192D46A73DD /* Pods_PrivateGallery.framework */; };
 		FA35FF8F1ECF43D80083F641 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA35FF8E1ECF43D70083F641 /* DetailViewController.swift */; };
-		FABD19B51ED9860800B9BB40 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABD19B41ED9860800B9BB40 /* LoginViewController.swift */; };
 		FABD19B71ED9942300B9BB40 /* LockScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABD19B61ED9942300B9BB40 /* LockScreenViewController.swift */; };
 		FAD0C7581ECDFD6000A69703 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD0C7571ECDFD6000A69703 /* AppDelegate.swift */; };
 		FAD0C75D1ECDFD6000A69703 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAD0C75B1ECDFD6000A69703 /* Main.storyboard */; };
-		FAD0C7601ECDFD6000A69703 /* PrivateGallery.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FAD0C75E1ECDFD6000A69703 /* PrivateGallery.xcdatamodeld */; };
 		FAD0C7621ECDFD6000A69703 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAD0C7611ECDFD6000A69703 /* Assets.xcassets */; };
 		FAD0C7651ECDFD6000A69703 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAD0C7631ECDFD6000A69703 /* LaunchScreen.storyboard */; };
 		FAD0C7701ECDFD6000A69703 /* PrivateGalleryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD0C76F1ECDFD6000A69703 /* PrivateGalleryTests.swift */; };
@@ -52,12 +50,10 @@
 		E061A10D0D555D90A803C41E /* Pods_PrivateGalleryUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PrivateGalleryUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E38D8EE6EB3B3C3B1219C2E5 /* Pods-PrivateGallery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrivateGallery.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PrivateGallery/Pods-PrivateGallery.debug.xcconfig"; sourceTree = "<group>"; };
 		FA35FF8E1ECF43D70083F641 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		FABD19B41ED9860800B9BB40 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FABD19B61ED9942300B9BB40 /* LockScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LockScreenViewController.swift; sourceTree = "<group>"; };
 		FAD0C7541ECDFD6000A69703 /* PrivateGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrivateGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAD0C7571ECDFD6000A69703 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAD0C75C1ECDFD6000A69703 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FAD0C75F1ECDFD6000A69703 /* PrivateGallery.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PrivateGallery.xcdatamodel; sourceTree = "<group>"; };
 		FAD0C7611ECDFD6000A69703 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAD0C7641ECDFD6000A69703 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAD0C7661ECDFD6000A69703 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -151,13 +147,11 @@
 				FAD0C7881ECDFD8E00A69703 /* CellCollectionViewCell.swift */,
 				FAD0C7891ECDFD8E00A69703 /* MainCollectionViewController.swift */,
 				FA35FF8E1ECF43D70083F641 /* DetailViewController.swift */,
-				FABD19B41ED9860800B9BB40 /* LoginViewController.swift */,
 				FABD19B61ED9942300B9BB40 /* LockScreenViewController.swift */,
 				FAD0C75B1ECDFD6000A69703 /* Main.storyboard */,
 				FAD0C7611ECDFD6000A69703 /* Assets.xcassets */,
 				FAD0C7631ECDFD6000A69703 /* LaunchScreen.storyboard */,
 				FAD0C7661ECDFD6000A69703 /* Info.plist */,
-				FAD0C75E1ECDFD6000A69703 /* PrivateGallery.xcdatamodeld */,
 			);
 			path = PrivateGallery;
 			sourceTree = "<group>";
@@ -465,9 +459,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FABD19B71ED9942300B9BB40 /* LockScreenViewController.swift in Sources */,
-				FABD19B51ED9860800B9BB40 /* LoginViewController.swift in Sources */,
 				FAD0C78B1ECDFD8E00A69703 /* MainCollectionViewController.swift in Sources */,
-				FAD0C7601ECDFD6000A69703 /* PrivateGallery.xcdatamodeld in Sources */,
 				FA35FF8F1ECF43D80083F641 /* DetailViewController.swift in Sources */,
 				FAD0C78A1ECDFD8E00A69703 /* CellCollectionViewCell.swift in Sources */,
 				FAD0C7581ECDFD6000A69703 /* AppDelegate.swift in Sources */,
@@ -754,19 +746,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		FAD0C75E1ECDFD6000A69703 /* PrivateGallery.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				FAD0C75F1ECDFD6000A69703 /* PrivateGallery.xcdatamodel */,
-			);
-			currentVersion = FAD0C75F1ECDFD6000A69703 /* PrivateGallery.xcdatamodel */;
-			path = PrivateGallery.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = FAD0C74C1ECDFD6000A69703 /* Project object */;
 }

@@ -32,24 +32,9 @@ class MainCollectionViewController: UICollectionViewController, NohanaImagePicke
 
         getAssets()
         print("View did load" , assetArray)
-//        createDirectory()
-//        getImage() //Modificar para que lea a traves de PHAssets
-//        
+
         let layout = ADMozaikLayout(delegate: self)
         self.collectionView?.collectionViewLayout = layout
-
-        
-        //        myBemCheckBox.onAnimationType = .bounce
-        //        myBemCheckBox.offAnimationType = .bounce
-        //
-        //myBemCheckBox.setOn(true, animated: true)
-        //elf.view.addSubview(myBemCheckBox)
-        
-        /* if(traitCollection.forceTouchCapability == .available){
-         
-         registerForPreviewing(with: self, sourceView: view)
-         
-         }*/
         
     }
     
@@ -96,18 +81,20 @@ class MainCollectionViewController: UICollectionViewController, NohanaImagePicke
     
     func getAssets() -> Void { //TODO hacer de manera asyncrona
         
-        let allPhotosOption = PHFetchOptions()
-        allPhotosOption.includeHiddenAssets = true
         
-        let allPhotosResult: PHFetchResult = PHAsset.fetchAssets(with: .image, options: allPhotosOption)
-    
-        allPhotosResult.enumerateObjects({ (asset, index, stop) in
-            if asset.isHidden {
-                self.hiddenAssetArray.append(asset)
-            }
-        })
+
+            let allPhotosOption = PHFetchOptions()
+            allPhotosOption.includeHiddenAssets = true
+            
+            let allPhotosResult: PHFetchResult = PHAsset.fetchAssets(with: .image, options: allPhotosOption)
         
-        assetArray = hiddenAssetArray
+            allPhotosResult.enumerateObjects({ (asset, index, stop) in
+                if asset.isHidden {
+                    self.hiddenAssetArray.append(asset)
+                }
+            })
+            
+            self.assetArray = self.hiddenAssetArray
         
     }
     
@@ -245,8 +232,8 @@ class MainCollectionViewController: UICollectionViewController, NohanaImagePicke
 
                 //do whatever you need to do
                 // ############################################
-                print(indexPath)
-                print(indexPath.row)
+//                print(indexPath)
+//                print(indexPath.row)
                 unhideImages(image: assetArray[indexPath.row], index: indexPath.row, indexPath: indexPath as IndexPath)
                
                 
@@ -431,20 +418,20 @@ class MainCollectionViewController: UICollectionViewController, NohanaImagePicke
         }
     }
     
-    @IBAction func selectButton(_ sender: Any) {
-        
-        selectionMode = selectionMode ? false : true
-
-        if(selectionMode) {
-            selectButtonOut.title = "Done"
-            selectButtonOut.style = .done
-            collectionView?.allowsMultipleSelection = true
-        } else {
-            selectButtonOut.title = "Select"
-            selectButtonOut.style = .plain
-            collectionView?.allowsMultipleSelection = false
-        }
-    }
+//    @IBAction func selectButton(_ sender: Any) {
+//        
+//        selectionMode = selectionMode ? false : true
+//
+//        if(selectionMode) {
+//            selectButtonOut.title = "Done"
+//            selectButtonOut.style = .done
+//            collectionView?.allowsMultipleSelection = true
+//        } else {
+//            selectButtonOut.title = "Select"
+//            selectButtonOut.style = .plain
+//            collectionView?.allowsMultipleSelection = false
+//        }
+//    }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         //if !selectionMode {
